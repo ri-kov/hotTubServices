@@ -17,19 +17,32 @@ html, body {
     text-transform: capitalize;
     color: #000025;
     text-decoration: none;
+    align-self: center;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .header {
     background-color: white;
     display: flex;
+    height: 6rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .header_button {
     background-color: red;
     text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: 500;
 }
 
 #headerLogo {
-    width: 8rem;
-    height: 4rem;
+    width: 20rem;
+    height: 12.5rem;
+    margin-top: -2.1rem;
 }
