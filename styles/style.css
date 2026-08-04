@@ -25,3 +25,8 @@ html, body {
 .header_button {
     background-color: red;
 }
+
+#headerLogo {
+    width: 8rem;
+    height: 4rem;
+}
