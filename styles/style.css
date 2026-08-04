@@ -15,11 +15,16 @@ html, body {
 
 .header_links {
     text-transform: uppercase;
-    color: #000025;
+    color:  #00004a;
     text-decoration: none;
     align-self: center;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.header_links:hover {
+    color:  #0000a5;
+    transition: 0.3s ease;
 }
 
 .header {
