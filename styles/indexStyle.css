@@ -48,3 +48,12 @@ h1 {
     text-transform: uppercase;
     font-weight: 650 !important;
 }
+
+.hero_text {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    width: 25rem;
+    margin-top: 1rem;
+}
