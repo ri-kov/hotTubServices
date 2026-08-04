@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     background-color: white;
     overflow-y: auto;
+    font-family: "Montserrat", sans-serif;
 }
 
 html, body {
@@ -15,6 +16,7 @@ html, body {
 .header_links {
     text-transform: capitalize;
     color: #000025;
+    text-decoration: none;
 }
 
 .header {
@@ -24,6 +26,7 @@ html, body {
 
 .header_button {
     background-color: red;
+    text-decoration: none;
 }
 
 #headerLogo {
