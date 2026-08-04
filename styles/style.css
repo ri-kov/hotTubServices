@@ -14,11 +14,11 @@ html, body {
 }
 
 .header_links {
-    text-transform: capitalize;
+    text-transform: uppercase;
     color: #000025;
     text-decoration: none;
     align-self: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -33,16 +33,29 @@ html, body {
     background-color: red;
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     align-content: center;
     display: flex;
     justify-content: center;
-    border-radius: 12px;
-    font-weight: 500;
+    border-radius: 7px;
+    font-weight: 550;
+    height: 3rem;
+    width: 12rem;
+    align-self: center;
+    margin-left: 2.5rem;
 }
 
 #headerLogo {
     width: 20rem;
     height: 12.5rem;
     margin-top: -2.1rem;
+}
+
+.header_div {
+    height: 1.5rem;
+    width: 0.1rem;
+    border-left: 0.1rem solid rgba(62, 62, 62, 0.4);
+    border-radius: 15px;
+    align-self: center;
+    margin: 0 1rem 0 1rem;
 }
