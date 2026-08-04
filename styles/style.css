@@ -16,3 +16,8 @@ html, body {
     text-transform: capitalize;
     color: #000025;
 }
+
+.header {
+    background-color: white;
+    display: flex;
+}
