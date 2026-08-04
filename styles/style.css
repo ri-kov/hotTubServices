@@ -11,3 +11,8 @@ html, body {
     width: 100%;
     overflow-x: hidden;
 }
+
+.header_links {
+    text-transform: capitalize;
+    color: #000025;
+}
