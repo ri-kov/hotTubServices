@@ -186,18 +186,20 @@ h1 {
     align-items: center;
     width: 81.3rem;
     margin-left: 7rem;
+    height: 6rem;
 }
 
 .service_footer_head {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 650;
     color: #00004a;
     margin-bottom: 0.1rem;
+    margin-top: 0.9rem;
 }
 
 .service_footer_text {
     font-size: 0.95rem;
-    font-size: 450;
+    font-weight: 470;
     color: #00004a;
 }
 
@@ -208,8 +210,8 @@ h1 {
 }
 .service_footer_icon {
     margin-left: 2rem;
-    margin-right: 1rem;
-    width: 4rem;
-    height: 6rem;
+    margin-right: 0.8rem;
+    width: 4.667rem;
+    height: 7.2rem;
     flex-shrink: 0;
 }
