@@ -185,7 +185,7 @@ h1 {
     display: flex;
     align-items: center;
     width: 81.3rem;
-    margin-left: 7rem;
+    margin-left: 6.5rem;
     height: 6rem;
 }
 
@@ -205,13 +205,23 @@ h1 {
 
 .service_footer_divider {
     width: 0.1rem;
-    height: 3rem;
-    border-left: 0.09rem solid #51515166;
+    height: 4rem;
+    border-radius: 15px;
+    border-left: 0.1rem solid #51515141;
+    margin-left: 23rem;
+    margin-right: 2rem;
 }
+
 .service_footer_icon {
     margin-left: 2rem;
     margin-right: 0.8rem;
     width: 4.667rem;
     height: 7.2rem;
     flex-shrink: 0;
+}
+
+.service_footer_note_text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e10000;
 }
