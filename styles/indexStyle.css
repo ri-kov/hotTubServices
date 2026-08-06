@@ -177,3 +177,39 @@ h1 {
     border-bottom: 0.2rem solid #e10000;
     border-radius: 30px;
 }
+
+.services_footer {
+    background-color: #00004a0f;
+    border-radius: 8px;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    width: 81.3rem;
+    margin-left: 7rem;
+}
+
+.service_footer_head {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #00004a;
+    margin-bottom: 0.1rem;
+}
+
+.service_footer_text {
+    font-size: 0.95rem;
+    font-size: 450;
+    color: #00004a;
+}
+
+.service_footer_divider {
+    width: 0.1rem;
+    height: 3rem;
+    border-left: 0.09rem solid #51515166;
+}
+.service_footer_icon {
+    margin-left: 2rem;
+    margin-right: 1rem;
+    width: 4rem;
+    height: 6rem;
+    flex-shrink: 0;
+}
