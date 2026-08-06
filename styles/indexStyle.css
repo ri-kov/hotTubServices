@@ -99,6 +99,7 @@ h1 {
 .services_section {
     font-family: "Montserrat", sans-serif;
     background-color: #f6f6f6;
+    padding-top: 2rem;
 }
 
 .services_head {
@@ -117,7 +118,6 @@ h1 {
     border-bottom: 0.3rem solid #e10000;
     justify-self: center;
     border-radius: 20px;
-    margin-top: 2rem;
     margin-bottom: 0.6rem;
 }
 
