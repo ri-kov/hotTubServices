@@ -48,6 +48,18 @@ html, body {
     width: 12rem;
     align-self: center;
     margin-left: 2.5rem;
+    border: 2px solid #e10000;
+}
+
+.header_button:hover {
+    background-color: rgb(240, 240, 240);
+    color: #e10000;
+    transition: 0.3s ease;
+}
+
+.header_button:hover i {
+    color: #e10000 !important;
+    transition: 0.3s ease;
 }
 
 #headerLogo {
