@@ -133,40 +133,47 @@ h1 {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     width: 15rem;
     height: 18rem;
+   justify-items: center;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
 }
 
 .services_card_circ {
-    background-color: #00004a3d;
-    border-radius: 50px;
-    width: 7rem;
-    height: 7rem;
+    background-color: #00004a0f;
+    border-radius: 100px;
+    width: 6.5rem;
+    height: 6.5rem;
     display: flex;
     justify-content: center;
+    align-self: center;
+    margin-top: 1.5rem;
+    flex-shrink: 0;
 }
 
 .services_card_head {
-    font-weight: 1rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 650;
     margin-bottom: 0.5rem;
     color: #00004a;
+    margin-top: 0.6rem;
+    text-align: center;
 }
 
 .services_card_text {
     font-size: 0.9rem;
-    font-weight: 450;
-    margin-top: 0.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
     color: #00004a;
     opacity: 0.9;
+    text-align: center;
+    width: 12rem;
 }
 
 .services_card_div {
     width: 3rem;
     height: 0.2rem;
     border-bottom: 0.2rem solid #e10000;
-    border-radius: 20px;
+    border-radius: 30px;
 }
