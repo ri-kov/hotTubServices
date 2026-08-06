@@ -241,9 +241,68 @@ h1 {
 .pricing_circ {
     background-color: #00004a0f;
     border-radius: 100px;
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 6rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-self: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pricing_head {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #00004a;
+    align-self: center;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+}
+
+.pricing_text_div {
+    width: 3rem;
+    height: 0.09rem;
+    border-bottom: 0.15rem solid #e10000;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.pricing_dollar_sign {
+    color: #e10000;
+    font-weight: 750;
+    font-size: 1.4rem;
+    position: relative;
+    bottom: 1.2rem;
+    right: 0.3rem;
+}
+
+.pricing_price {
+    font-weight: 700;
+    color: #00004a;
+    font-size: 3.1rem;
+}
+
+.pricing_card_price {
+    color: #00004a;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+}
+
+.pricing_text {
+    color: #00004a;
+    font-weight: 450;
+    font-size: 0.9rem;
+    width: 15rem;
+    align-self: center;
+    text-align: center;
+}
+
+.pricing_div {
+    height: 0.1rem;
+    width: 20rem;
+    border-bottom: 0.1rem solid #4646462a;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
