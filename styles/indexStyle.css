@@ -98,6 +98,7 @@ h1 {
 
 .services_section {
     font-family: "Montserrat", sans-serif;
+    background-color: #f6f6f6;
 }
 
 .services_head {
@@ -126,4 +127,24 @@ h1 {
     font-size: 1.1rem;
     font-weight: 500;
     justify-self: center;
+}
+
+.services_card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 12rem;
+    height: 22rem;
+}
+
+.services_card_circ {
+    background-color: #00004a3d;
+    border-radius: 50px;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
 }
