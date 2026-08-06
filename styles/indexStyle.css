@@ -225,3 +225,25 @@ h1 {
     font-weight: 600;
     color: #e10000;
 }
+
+.pricing_card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    width: 24rem;
+    height: 34rem;
+   justify-items: center;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    background-color: white;
+}
+
+.pricing_circ {
+    background-color: #00004a0f;
+    border-radius: 100px;
+    width: 6.5rem;
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
