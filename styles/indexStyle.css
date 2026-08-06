@@ -96,18 +96,28 @@ h1 {
     margin: -0.5rem 1.5rem 0 1.5rem;
 }
 
+.services_section {
+    font-family: "Montserrat", sans-serif;
+}
+
 .services_head {
     color: #00004a;
     text-transform: uppercase;
-    font-size: 2.7rem;
+    font-size: 2.9rem;
     font-weight: 650;
+    justify-self: center;
+    margin-bottom: 0rem;
 }
 
 .services_div {
     background-color: #e10000;
-    width: 4rem;
-    height: 0.5rem;
-    border-bottom: 0.5rem solid #e10000;
+    width: 5.5rem;
+    height: 0.3rem;
+    border-bottom: 0.3rem solid #e10000;
+    justify-self: center;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
 }
 
 .servies_txt {
@@ -115,4 +125,5 @@ h1 {
     opacity: 0.9;
     font-size: 1.1rem;
     font-weight: 500;
+    justify-self: center;
 }
