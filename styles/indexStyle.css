@@ -483,3 +483,11 @@ h1 {
     margin-bottom: 0;
     margin-top: -0.2rem;
 }
+
+.special_offer_text4 {
+    opacity: 0.85;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #00004a;
+    width: 8rem;
+}
