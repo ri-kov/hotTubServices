@@ -470,4 +470,16 @@ h1 {
     text-transform: uppercase;
     margin-left: 17rem;
     text-shadow: 2px 2px 2px #00000033;
+    margin-bottom: 0;
+}
+
+.special_offer_text3 {
+    color: #00004a;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    white-space: nowrap;
+    font-weight: 500;
+    margin-left: 20rem;
+    margin-bottom: 0;
+    margin-top: -0.2rem;
 }
