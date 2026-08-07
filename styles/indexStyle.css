@@ -571,7 +571,12 @@ h1 {
 .special_offer_book:hover {
     color: #e10000;
     background: white;
-    transition: 0.3s ease;
+    transition: 0.3s;
+}
+
+.special_offer_book:hover .serv_btn_icon {
+    fill: #e10000 !important;
+    transition: 0.3s;
 }
 
 .special_offer_book_text {
