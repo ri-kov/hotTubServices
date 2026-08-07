@@ -508,3 +508,13 @@ h1 {
     border-left: 37rem solid #00000022;
     margin-top: 1rem;
 }
+
+.special_offer_text5 {
+    font-size: 0.9rem;
+    color: #00004a;
+    opacity: 0.9;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+}
