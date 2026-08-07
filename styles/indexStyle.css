@@ -489,5 +489,13 @@ h1 {
     font-size: 0.8rem;
     font-weight: 500;
     color: #00004a;
-    width: 8rem;
+    width: 7.5rem;
+}
+
+.special_offer_div {
+    height: 2rem;
+    width: 0.1rem;
+    border-left: 0.1rem solid #0000003a;
+    border-radius: 20px;
+    margin-right: 0.5rem;
 }
