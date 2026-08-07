@@ -499,3 +499,12 @@ h1 {
     border-radius: 20px;
     margin-right: 0.5rem;
 }
+
+.special_offer_main_div {
+    height: 0.1rem !important;
+    width: 10rem;
+    /* margin: 0; */
+    margin-left: 18rem;
+    border-left: 37rem solid #00000022;
+    margin-top: 1rem;
+}
