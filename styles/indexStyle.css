@@ -518,3 +518,35 @@ h1 {
     margin-bottom: 0;
     margin-left: 0.5rem;
 }
+
+.special_offer_price_circ {
+    border-radius: 100px;
+    background-color: #00004a;
+    color: white;
+    align-items: center;
+    height: 10.2rem;
+    width: 10.2rem;
+    justify-self: right;
+    position: relative;
+    bottom: 9rem;
+    right: 15rem;
+    border: 1px solid white;
+}
+
+.special_offer_price_circ::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    border: 3px dashed #ffffffc8;
+}
+
+.special_offer_price_text {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 0.5rem;
+}
