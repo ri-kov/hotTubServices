@@ -389,7 +389,7 @@ h1 {
 }
 
 .special_offer_cont {
-    background: url(../pictures/bannerBackground.PNG);
+    background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../pictures/bannerBackground.PNG);
     width: 81.3rem;
     border-radius: 8px;
     height: 16rem;
@@ -398,12 +398,40 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
-.special_offer_cont::before {
-    content: '';
+.seasonal_badge {
     position: absolute;
-    top: 0; left: 0; width: 30%; height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
-    z-index: 1;
+    width: 7.5rem;
+    height: 6.5rem;
+    background: linear-gradient(to bottom, red, #e10000);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 72%, 0 88%);
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-top: -1rem;
+    z-index: 5;
+}
+
+.seasonal_badge::before {
+    content: "";
+    position: absolute;
+    inset: 7px;
+    border: 1.6px dashed rgba(255, 255, 255, 0.85);
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 72%, 0 98%);
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.seasonal_badge_text {
+    color: white;
+    font-weight: 650;
+    font-size: 1rem;
+    text-transform: uppercase;
+    /* margin-left: 1rem; */
+    text-align: center;
 }
