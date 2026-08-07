@@ -596,3 +596,48 @@ h1 {
     justify-self: center;
     margin-top: 2rem;
 }
+
+.book_form_circ {
+    background-color: #00004a0f;
+    border-radius: 100px;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+#bookForm {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    justify-self: center;
+}
+
+.book_form_head {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #00004a;
+    text-transform: uppercase;
+}
+
+.book_form_text {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #00004a;
+    opacity: 0.9;
+}
+
+.star{
+    font-size: small !important;
+    color: red !important;
+}
+
+.book_input {
+    width: 16rem;
+    height: 2.5rem;
+}
