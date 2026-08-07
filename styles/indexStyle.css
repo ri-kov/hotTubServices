@@ -607,13 +607,15 @@ h1 {
     align-self: center;
     margin-left: 1rem;
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 #bookForm {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    justify-self: center;
+    padding-left: 1.5rem;
+    width: 53.5rem;
 }
 
 .book_form_head {
@@ -640,4 +642,10 @@ h1 {
 .book_input {
     width: 16rem;
     height: 2.5rem;
+}
+
+.input_name {
+    font-weight: 550;
+    color: #00004a;
+    margin-bottom: 1rem;
 }
