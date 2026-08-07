@@ -550,3 +550,34 @@ h1 {
     white-space: nowrap;
     margin-left: 0.5rem;
 }
+
+.special_offer_book {
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(to bottom, red, #e10000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    justify-self: right;
+    border-radius: 8px;
+    position: relative;
+    bottom: 13.5rem;
+    right: 4.5rem;
+    color: white;
+    border: 2px solid #e10000;
+}
+
+.special_offer_book:hover {
+    color: #e10000;
+    background: white;
+    transition: 0.3s ease;
+}
+
+.special_offer_book_text {
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    font-weight: 650;
+    margin-bottom: 0;
+    margin-left: 0.3rem;
+}
