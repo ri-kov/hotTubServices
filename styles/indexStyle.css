@@ -399,6 +399,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
+    font-family: "Montserrat", sans-serif;
 }
 
 .seasonal_badge {
@@ -441,4 +442,32 @@ h1 {
     margin-top: 4rem;
     opacity: 0.9;
     filter: drop-shadow(2px 4px 6px #00000050);
+}
+
+.special_offer_line {
+    width: 3rem;
+    height: 0.1rem;
+    border-bottom: 0.16rem solid #e10000;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.special_offer_text1 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #e10000;
+    margin-right: 0.6rem;
+    margin-left: 0.6rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.special_offer_text2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #00004a;
+    text-transform: uppercase;
+    margin-left: 17rem;
+    text-shadow: 2px 2px 2px #00000033;
 }
