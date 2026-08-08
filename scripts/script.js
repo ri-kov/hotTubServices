@@ -38,6 +38,9 @@ dateButton.addEventListener("click", function () {
 
 const calendarDays = document.getElementById("calendarDays");
 const monthYear = document.getElementById("monthYear");
+const nextMonth = document.getElementById("nextMonth");
+const prevMonth = document.getElementById("prevMonth");
+const selectedDate = document.getElementById("selectedDate");
 
 let currentDate = new Date();
 
@@ -47,7 +50,7 @@ function renderCalendar() {
     const month = currentDate.getMonth();
 
     const firstDayOfMonth = new Date(year, month, 1);
-    const lastDayOfMonth = new Date(year, dateButton, 0);
+    const lastDayOfMonth = new Date(year, month+1, 0);
 
     const firstWeekday = firstDayOfMonth.getDay();
     const numberOfDays = lastDayOfMonth.getDate();
@@ -57,13 +60,48 @@ function renderCalendar() {
         year: "numeric"
     });
 
-    for (let i = 0; i < numberOfDays; day++) {
-        constdayButton = document.createElement("button");
+    for (let i = 0; i < firstWeekday; i++) {
+        const emptySpace = document.createElement("div");
+        calendarDays.appendChild(emptySpace);
+    }
 
+    for (let day = 1; day <= numberOfDays; day++) {
+        const dayButton = document.createElement("button");
         dayButton.type = "button";
         dayButton.textContent = day;
-        dayButton.classList.appendChild(dayButton);
+
+        dayButton.addEventListener("click", function() {
+            const previouslySelected = document.querySelector(".calendar_day.selected");
+            if (previouslySelected) {
+                previouslySelected.classList.remove("selected");
+            }
+
+            dayButton.classList.add("selected");
+
+            const selectedFullDate = new Date(year, month, day);
+            selectedFullDate.textContent = selectedFullDate.toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric"
+            });
+        });
+
+        dayButton.classList.add("calendar_day");
+        calendarDays.appendChild(dayButton);
     }
 }
 
 renderCalendar();
+
+nextMonth.addEventListener("click", function () {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+
+    renderCalendar();
+    console.log(currentDate);
+})
+
+prevMonth.addEventListener("click", function () {
+    currentDate.setMonth(currentDate.getMonth() - 1);
+
+    renderCalendar();
+})

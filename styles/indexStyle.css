@@ -859,3 +859,8 @@ h1 {
 .calendar_day:hover {
     background-color: #eef1ff;
 }
+
+.calendar_day.selected {
+    background-color: #00004a;
+    color: white;
+}
