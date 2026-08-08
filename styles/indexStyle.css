@@ -775,12 +775,14 @@ h1 {
 
 .calendar {
     position: absolute;
-    background-color: white;
+    border: 1px solid #e1e7f0;
+    border-radius: 8px;
     width: 16.5rem;
     padding: 0.25rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     display: none;
     z-index: 100;
+    background: #f8fbff;
 }
 
 .calendar.open {
@@ -811,4 +813,49 @@ h1 {
 
 .calendar_header button:hover {
     color: #316eea;
+}
+
+.calendar_arrow {
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #00004a;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.75rem rgba(15, 23, 42, 0.08);
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 0.5rem;
+}
+
+.weekdays span {
+    font-weight: 700;
+    color: #777b8d;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.calendar_days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+}
+
+.calendar_day {
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: #00004a;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.calendar_day:hover {
+    background-color: #eef1ff;
 }
