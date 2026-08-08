@@ -694,18 +694,21 @@ h1 {
 }
 
 .mod_select_options {
-  top: calc(100% + 0.4rem);
-  background: #fff;
-  border: 1.5px solid #1F71CE;
-  border-radius: 0.55rem;
-  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12);
-  list-style: none;
-  padding: 0.4rem;
-  margin: 0;
-  display: none;
-  width: 20rem;
-  z-index: 50;
-  position: absolute;
+    top: calc(100% + 0.4rem);
+    background: #fff;
+    border: 1.5px solid #1F71CE;
+    border-radius: 0.55rem;
+    box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12);
+    list-style: none;
+    padding: 0.4rem;
+    margin: 0;
+    display: none;
+    width: 20rem;
+    z-index: 50;
+    position: absolute;
+    height: 10rem;
+    overflow-y: scroll;
+    width: 16rem;
 }
 
 .mod_form::placeholder {
@@ -725,7 +728,6 @@ h1 {
   width: 16rem;
   height: 2.5rem;
   margin-top: 0.3rem;
-  padding: 0 1rem;
   border: 1.5px solid #d7dfeb;
   border-radius: var(--bs-border-radius);
   background: #fff;
@@ -793,7 +795,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .calendar_header h3 {
@@ -803,12 +805,12 @@ h1 {
 }
 
 .calendar_header button {
-    background: none;
+    background: white;
     border: none;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     cursor: pointer;
     color: #00004a;
-    padding: 5px 10px;
+    margin-top: 0.1rem;
 }
 
 .calendar_header button:hover {
@@ -816,8 +818,8 @@ h1 {
 }
 
 .calendar_arrow {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 1.9rem;
+    height: 1.9rem;
     border: none;
     border-radius: 50%;
     background: #ffffff;
@@ -871,4 +873,9 @@ h1 {
     opacity: 0.9;
     line-height: 1.5;
     color: black;
+}
+
+.selected_service {
+    opacity: 0.9 !important;
+    font-weight: 500 !important;
 }

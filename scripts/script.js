@@ -11,6 +11,7 @@ modTrigger.addEventListener("click", () => {
 modOptions.forEach(option => {
   option.addEventListener("click", () => {
     modSelectedText.textContent = option.textContent;
+    modSelectedText.classList.add("selected_service");
     modHiddenInput.value = option.dataset.value;
     modSelectedText.style.color = 'var(--bs-body-color)';
     modSelectedText.style.fontWeight = '450';
@@ -34,6 +35,12 @@ const calendar = document.getElementById("calendar");
 
 dateButton.addEventListener("click", function () {
     calendar.classList.toggle("open");
+});
+
+document.addEventListener("click", function() {
+    if (!calendar.contains(event.target) && !dateButton.contains(event.target)) {
+        calendar.classList.remove("open");
+    }
 });
 
 const calendarDays = document.getElementById("calendarDays");
