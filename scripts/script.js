@@ -120,12 +120,6 @@ const selectedText = customSelect.querySelector(".selected_text");
 const options = customSelect.querySelectorAll(".select_options li");
 const hiddenInput = document.getElementById("selServ");
 
-console.log(customSelect);
-console.log(trigger);
-console.log(selectedText);
-console.log(options);
-console.log(hiddenInput);
-
 trigger.addEventListener("click", () => {
   customSelect.classList.toggle("exp");
 });
