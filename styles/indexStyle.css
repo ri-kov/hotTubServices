@@ -654,3 +654,97 @@ h1 {
 .book_form_inp::placeholder {
     font-size: 0.9rem;
 }
+
+.mod_custom_select.exp .mod_select_trigger {
+  border-color: #1F71CE;
+  box-shadow: 0 0 0 4px rgba(31, 113, 206, 0.12);
+}
+
+.mod_custom_select.exp .mod_select_options {
+  display: block;
+}
+
+.mod_custom_select.exp .mod_emoji_down {
+    opacity: 0;
+}
+
+.mod_custom_select .mod_emoji_up {
+    opacity: 0;
+}
+
+.mod_custom_select .mod_emoji_down {
+    opacity: 1;
+}
+
+.mod_custom_select.exp .mod_emoji_up {
+    opacity: 1;
+}
+
+.mod_select_options li {
+  padding: 0.3rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: #1f2937;
+}
+
+.mod_select_options li:hover,
+.mod_select_options li.selected {
+  background: #1F71CE;
+  color: #fff;
+}
+
+.mod_select_options {
+  top: calc(100% + 0.4rem);
+  background: #fff;
+  border: 1.5px solid #1F71CE;
+  border-radius: 0.55rem;
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12);
+  list-style: none;
+  padding: 0.4rem;
+  margin: 0;
+  display: none;
+  width: 20rem;
+  z-index: 50;
+  position: absolute;
+}
+
+.mod_form::placeholder {
+    position: fixed;
+    left: 57px;
+    font-weight: 550;
+    font-size: 0.9rem;
+}
+
+.mod_inp input {
+    width: 20rem;
+    padding-left: 57px;
+    padding-right: 10px !important;
+}
+
+.mod_select_trigger{
+  width: 16rem;
+  height: 2.5rem;
+  margin-top: 0.3rem;
+  padding: 0 1rem;
+  border: 1.5px solid #d7dfeb;
+  border-radius: var(--bs-border-radius);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #424242de;
+  cursor: pointer;
+}
+
+.mod_emj_wrench {
+  color: var(--bs-modal-color);
+  opacity: 0.6;
+}
+
+.mod_emoji {
+  position: sticky;
+  left: 50rem;
+  pointer-events: none;
+  font-size: 1rem;
+  opacity: 0.6;
+}

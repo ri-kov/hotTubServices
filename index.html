@@ -389,21 +389,74 @@
                         </div>
                         <div class="form-group" style = "display: flex; margin-top: 1rem;">
                             <div style = "display: block;">
-                                <span class = "input_name">Full Name <span class = "star">*</span></span>
-                                <div class="input-container book_input">
-                                    <input style = "height: 100%; margin-top: 0.3rem;" id = "formName" class="form-control book_form_inp" maxlength="40" placeholder="Enter your full name" required>
+                                <span class = "input_name">Service Type <span class = "star">*</span></span>
+                                <div class="mod_custom_select" id="modConditionSelect" style = "position: relative;">
+                                    <button type="button" class="mod_select_trigger" id = "modSelect">
+                                        <i class="fa-solid fa-wrench mod_emj_wrench"></i>
+                                        <span class = "mod_selected_text" style = "font-weight: 550; margin-left: 1.4rem; font-size: 0.9rem;">Select a service</span>
+                                        <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
+                                        <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
+                                    </button>
+                                    <ul class="mod_select_options">
+                                        <li data-value="full-inspection">Full Inspection</li>
+                                        <li data-value="winterize">Winterize</li>
+                                        <li data-value="spring-opening">Spring Opening</li>
+                                        <li data-value="electrical-repair">Full Maintenance</li>
+                                        <li data-value="leak-repair">Leak repair</li>
+                                        <li data-value="pump-repair">Pump Repair</li>
+                                        <li data-value="fluid-inspection">Other (please specify)</li>
+                                    </ul>
+                                    <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
                                 </div>
                             </div>
                             <div style = "display: block; margin-left: 1.2rem;">
-                                <span class = "input_name">Email Address <span class = "star">*</span></span>
-                                <div class="input-container book_input">
-                                    <input style = "height: 100%; margin-top: 0.3rem;" id = "formAdress" class="form-control book_form_inp" maxlength="50" inputmode="email" placeholder="Enter your email" required>
+                                <span class = "input_name">Preffered Date <span class = "star">*</span></span>
+                                <div class="mod_custom_select" id="modConditionSelect" style = "position: relative;">
+                                    <button type="button" class="mod_select_trigger" id = "modSelect">
+                                        <i class="fa-solid fa-wrench mod_emj_wrench"></i>
+                                        <span class = "mod_selected_text" style = "font-weight: 550; margin-left: 1.4rem; font-size: 0.9rem;">Select a service</span>
+                                        <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
+                                        <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
+                                    </button>
+                                    <ul class="mod_select_options">
+                                        <li data-value="full-inspection">Full Inspection</li>
+                                        <li data-value="winterize">Winterize</li>
+                                        <li data-value="spring-opening">Spring Opening</li>
+                                        <li data-value="electrical-repair">Full Maintenance</li>
+                                        <li data-value="leak-repair">Leak repair</li>
+                                        <li data-value="pump-repair">Pump Repair</li>
+                                        <li data-value="fluid-inspection">Other (please specify)</li>
+                                    </ul>
+                                    <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
                                 </div>
                             </div>
                             <div style = "display: block;  margin-left: 1.2rem;">
-                                <span class = "input_name">Phone Number  <span class = "star">*</span></span>
-                                <div class="input-container book_input">
-                                    <input style = "height: 100%; margin-top: 0.3rem;" id = "formNumber" class="form-control book_form_inp" maxlength="18" inputmode="tel" placeholder="(204) XXX-XXXX">
+                                <span class = "input_name">Preferred Time <span class = "star">*</span></span>
+                                <div class="mod_custom_select" id="modConditionSelect" style = "position: relative;">
+                                    <button type="button" class="mod_select_trigger" id = "modSelect">
+                                        <i class="fa-solid fa-wrench mod_emj_wrench"></i>
+                                        <span class = "mod_selected_text" style = "font-weight: 550; margin-left: 1.4rem; font-size: 0.9rem;">Select a service</span>
+                                        <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
+                                        <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
+                                    </button>
+                                    <ul class="mod_select_options">
+                                        <li data-hour = "8">8:00 AM</li>
+                                        <li data-hour = "9">9:00 AM</li>
+                                        <li data-hour = "10">10:00 AM</li>
+                                        <li data-hour = "11">11:00 AM</li>
+                                        <li data-hour = "12">12:00 PM</li>
+                                        <li data-hour = "13">1:00 PM</li>
+                                        <li data-hour = "14">2:00 PM</li>
+                                        <li data-hour = "15">3:00 PM</li>
+                                        <li data-hour = "16">4:00 PM</li>
+                                        <li data-hour = "17">5:00 PM</li>
+                                        <li data-hour = "18">6:00 PM</li>
+                                        <li data-hour = "19">7:00 PM</li>
+                                        <li data-hour = "20">8:00 PM</li>
+                                        <li data-hour = "21">9:00 PM</li>
+                                        <li data-hour = "22">10:00 PM</lu>
+                                    </ul>
+                                    <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
                                 </div>
                             </div>
                         </div>
@@ -412,5 +465,6 @@
             </div>
         </div>
     </section>
+    <script src = "scripts/script.js"></script>
 </body>
 </html>
