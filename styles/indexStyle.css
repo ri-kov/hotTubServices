@@ -616,12 +616,13 @@ h1 {
     border-radius: 8px;
     padding-left: 1.5rem;
     width: 53.5rem;
+    margin-top: 2rem;
 }
 
 .book_form_head {
     margin-bottom: 0;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #00004a;
     text-transform: uppercase;
 }
@@ -648,4 +649,8 @@ h1 {
     font-weight: 550;
     color: #00004a;
     margin-bottom: 1rem;
+}
+
+.book_form_inp::placeholder {
+    font-size: 0.9rem;
 }
