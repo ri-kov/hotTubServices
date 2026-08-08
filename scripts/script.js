@@ -28,3 +28,10 @@ document.addEventListener("click", event => {
     modCustomSelect.classList.remove("exp");
   }
 });
+
+const dateButton = document.getElementById("dateButton");
+const calendar = document.getElementById("calendar");
+
+dateButton.addEventListener("click", function () {
+    calendar.classList.toggle("open");
+});

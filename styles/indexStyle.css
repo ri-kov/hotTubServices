@@ -748,3 +748,67 @@ h1 {
   font-size: 1rem;
   opacity: 0.6;
 }
+
+.date_button {
+    width: 16rem;
+    height: 2.5rem;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #d4d7e0;
+    border-radius: 6px;
+    color: #6f7280;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.date_button:hover {
+    border-color: #315eea;
+    transition: 0.3s ease;
+}
+
+.date-group {
+    position: relative;
+}
+
+.calendar {
+    position: absolute;
+    width: 100%;
+    min-width: 18.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    display: none;
+    z-index: 100;
+}
+
+.calendar.open {
+    display: block;
+}
+
+.calendar_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.calendar_header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #00004a;
+}
+
+.calendar_header button {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #00004a;
+    padding: 5px 10px;
+}
+
+.calendar_header button:hover {
+    color: #316eea;
+}

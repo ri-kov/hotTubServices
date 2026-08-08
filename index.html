@@ -409,25 +409,18 @@
                                     <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
                                 </div>
                             </div>
-                            <div style = "display: block; margin-left: 1.2rem;">
-                                <span class = "input_name">Preffered Date <span class = "star">*</span></span>
-                                <div class="mod_custom_select" id="modConditionSelect" style = "position: relative;">
-                                    <button type="button" class="mod_select_trigger" id = "modSelect">
-                                        <i class="fa-solid fa-wrench mod_emj_wrench"></i>
-                                        <span class = "mod_selected_text" style = "font-weight: 550; margin-left: 1.4rem; font-size: 0.9rem;">Select a service</span>
-                                        <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
-                                        <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
-                                    </button>
-                                    <ul class="mod_select_options">
-                                        <li data-value="full-inspection">Full Inspection</li>
-                                        <li data-value="winterize">Winterize</li>
-                                        <li data-value="spring-opening">Spring Opening</li>
-                                        <li data-value="electrical-repair">Full Maintenance</li>
-                                        <li data-value="leak-repair">Leak repair</li>
-                                        <li data-value="pump-repair">Pump Repair</li>
-                                        <li data-value="fluid-inspection">Other (please specify)</li>
-                                    </ul>
-                                    <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
+                            <div class = "date_group" style = "display: block; margin-left: 1.2rem;">
+                                <label for = "prefferedDate" class = "input_name" style = "margin-bottom: 0.3rem;">Preffered Date <span class = "star">*</span></label>
+                                <button type="button" class="date_button" id = "dateButton">
+                                        <span id = "selectedDate">Select a service</span>
+                                        <i class="fa-regular fa-calendar" style = "font-size: 1.4rem; opacity: 0.85;"></i>
+                                </button>
+                                <div class = "calendar" id = "calendar">
+                                    <div class = "calendar_header">
+                                        <button id = "prevMonth">&lt;</button>
+                                        <h3 id = "monthYear">August 2026</h3>
+                                        <button id = "nextMonth">&gt;</button>
+                                    </div>
                                 </div>
                             </div>
                             <div style = "display: block;  margin-left: 1.2rem;">
