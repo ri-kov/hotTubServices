@@ -79,11 +79,12 @@ function renderCalendar() {
             dayButton.classList.add("selected");
 
             const selectedFullDate = new Date(year, month, day);
-            selectedFullDate.textContent = selectedFullDate.toLocaleDateString("en-US", {
+            selectedDate.textContent = selectedFullDate.toLocaleDateString("en-US", {
                 month: "long",
                 day: "numeric",
                 year: "numeric"
             });
+            selectedDate.classList.add("has_date");
         });
 
         dayButton.classList.add("calendar_day");
