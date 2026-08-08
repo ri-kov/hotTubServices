@@ -113,3 +113,41 @@ prevMonth.addEventListener("click", function () {
 
     renderCalendar();
 })
+
+const customSelect = document.getElementById("conditionSelect");
+const trigger = customSelect.querySelector(".select_trigger");
+const selectedText = customSelect.querySelector(".selected_text");
+const options = customSelect.querySelectorAll(".select_options li");
+const hiddenInput = document.getElementById("selServ");
+
+console.log(customSelect);
+console.log(trigger);
+console.log(selectedText);
+console.log(options);
+console.log(hiddenInput);
+
+trigger.addEventListener("click", () => {
+  customSelect.classList.toggle("exp");
+});
+
+options.forEach(option => {
+  option.addEventListener("click", () => {
+    selectedText.textContent = option.textContent;
+    selectedText.classList.add("selected_services");
+    hiddenInput.value = option.dataset.value;
+    selectedText.style.color = 'var(--bs-body-color)';
+    selectedText.style.fontWeight = '450';
+    selectedText.style.fontSize = '1rem';
+
+    options.forEach(item => item.classList.remove("selected"));
+    option.classList.add("selected");
+
+    customSelect.classList.remove("exp");
+  });
+});
+
+document.addEventListener("click", event => {
+  if (!customSelect.contains(event.target)) {
+    customSelect.classList.remove("exp");
+  }
+});

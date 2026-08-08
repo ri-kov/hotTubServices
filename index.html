@@ -394,7 +394,7 @@
                                     <button type="button" class="mod_select_trigger" id = "modSelect">
                                         <span class = "mod_selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select a service</span>
                                         <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
-                                        <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
+                                        <span class = "mod_emoji mod_emoji_up" style = "left: 5.1rem;"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
                                     </button>
                                     <ul class="mod_select_options">
                                         <li data-value="full-inspection">Full Inspection</li>
@@ -438,14 +438,13 @@
                             </div>
                             <div style = "display: block;  margin-left: 1.2rem;">
                                 <span class = "input_name">Preferred Time <span class = "star">*</span></span>
-                                <div class="mod_custom_select" id="modConditionSelect" style = "position: relative;">
-                                    <button type="button" class="mod_select_trigger" id = "modSelect">
-                                        <i class="fa-solid fa-wrench mod_emj_wrench"></i>
-                                        <span class = "mod_selected_text" style = "font-weight: 550; margin-left: 1.4rem; font-size: 0.9rem;">Select a service</span>
-                                        <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
-                                        <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.4rem;"></i></span>
+                                <div class="custom_select" id="conditionSelect" style = "position: relative;">
+                                    <button type="button" class="select_trigger" id = "select">
+                                        <span class = "selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select time</span>
+                                        <span class = "mod_emoji emoji_down" style = "left: 8.4rem;"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem;"></i></span>
+                                        <span class = "mod_emoji emoji_up" style = "left: 7rem;"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem;"></i></span>
                                     </button>
-                                    <ul class="mod_select_options">
+                                    <ul class="select_options">
                                         <li data-hour = "8">8:00 AM</li>
                                         <li data-hour = "9">9:00 AM</li>
                                         <li data-hour = "10">10:00 AM</li>
