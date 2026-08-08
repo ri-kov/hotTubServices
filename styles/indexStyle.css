@@ -775,9 +775,9 @@ h1 {
 
 .calendar {
     position: absolute;
-    width: 100%;
-    min-width: 18.75rem;
-    padding: 1.25rem;
+    background-color: white;
+    width: 16.5rem;
+    padding: 0.25rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     display: none;
     z-index: 100;
@@ -796,7 +796,7 @@ h1 {
 
 .calendar_header h3 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #00004a;
 }
 
