@@ -617,7 +617,7 @@ h1 {
     padding-left: 1.5rem;
     width: 53.5rem;
     margin-top: 2rem;
-    height: 40rem;
+    height: 42rem;
 }
 
 .book_form_head {
@@ -1009,4 +1009,13 @@ textarea::placeholder {
 .submit_button:hover {
     background: linear-gradient(to bottom, #c40000, #8e0000);
     transition: 0.3s ease;
+}
+
+.btm_disc {
+    color: black;
+    opacity: 0.85;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-left: 0.3rem;
 }
