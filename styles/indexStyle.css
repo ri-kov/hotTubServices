@@ -901,7 +901,6 @@ h1 {
   align-items: center;
   font-size: 1rem;
   color: #424242de;
-  cursor: pointer;
 }
 
 .custom_select.exp .select_trigger {
@@ -955,4 +954,8 @@ h1 {
 
 .weekday_dis {
     display: none;
+}
+
+.enabled {
+    cursor: pointer;
 }

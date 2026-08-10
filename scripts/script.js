@@ -51,7 +51,8 @@ const selectedDate = document.getElementById("selectedDate");
 const customSelect = document.getElementById("conditionSelect");
 const selectedText = customSelect.querySelector(".selected_text");
 const options = customSelect.querySelectorAll(".select_options li");
-
+const trigger = customSelect.querySelector(".select_trigger");
+const hiddenInput = document.getElementById("selServ");
 let currentDate = new Date();
 
 function renderCalendar() {
@@ -81,6 +82,7 @@ function renderCalendar() {
         dayButton.textContent = day;
 
         dayButton.addEventListener("click", function() {
+            trigger.classList.add("enabled");
             selectedText.textContent = "Select time";
             selectedText.classList.remove("selected_service");
             options.forEach(option => {
@@ -139,11 +141,12 @@ prevMonth.addEventListener("click", function () {
     renderCalendar();
 })
 
-const trigger = customSelect.querySelector(".select_trigger");
-const hiddenInput = document.getElementById("selServ");
-
 trigger.addEventListener("click", () => {
-  customSelect.classList.toggle("exp");
+    if (!trigger.classList.contains("enabled")) {
+        alert("Please select a date first");
+    } else {
+        customSelect.classList.toggle("exp");
+    }
 });
 
 options.forEach(option => {
@@ -163,7 +166,7 @@ options.forEach(option => {
 });
 
 document.addEventListener("click", event => {
-  if (!customSelect.contains(event.target)) {
-    customSelect.classList.remove("exp");
-  }
+    if (!customSelect.contains(event.target)) {
+        customSelect.classList.remove("exp");
+    }
 });
