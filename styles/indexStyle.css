@@ -984,3 +984,29 @@ textarea::placeholder {
     font-weight: 550;
     margin-top: 0.5rem;
 }
+
+.submit_button {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e10000;
+    background: linear-gradient(to bottom, red, #e10000);
+    color: white;
+    border-radius: 6px;
+    width: 50.4rem;
+    height: 3rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.submit_btn_text {
+    font-size: 1rem;
+    font-weight: 550;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+}
+
+.submit_button:hover {
+    background: linear-gradient(to bottom, #c40000, #8e0000);
+    transition: 0.3s ease;
+}
