@@ -170,3 +170,10 @@ document.addEventListener("click", event => {
         customSelect.classList.remove("exp");
     }
 });
+
+const textarea = document.getElementById("formAdditional");
+const charCount = document.getElementById("charactersCount");
+
+textarea.addEventListener("input", () => {
+    charCount.textContent = `${textarea.value.length}/500`;
+})
