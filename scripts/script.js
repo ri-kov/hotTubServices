@@ -48,6 +48,9 @@ const monthYear = document.getElementById("monthYear");
 const nextMonth = document.getElementById("nextMonth");
 const prevMonth = document.getElementById("prevMonth");
 const selectedDate = document.getElementById("selectedDate");
+const customSelect = document.getElementById("conditionSelect");
+const selectedText = customSelect.querySelector(".selected_text");
+const options = customSelect.querySelectorAll(".select_options li");
 
 let currentDate = new Date();
 
@@ -78,6 +81,12 @@ function renderCalendar() {
         dayButton.textContent = day;
 
         dayButton.addEventListener("click", function() {
+            selectedText.textContent = "Select time";
+            selectedText.classList.remove("selected_service");
+            options.forEach(option => {
+                option.classList.remove("selected");
+            })
+
             const previouslySelected = document.querySelector(".calendar_day.selected");
             if (previouslySelected) {
                 previouslySelected.classList.remove("selected");
@@ -92,6 +101,23 @@ function renderCalendar() {
                 year: "numeric"
             });
             selectedDate.classList.add("has_date");
+
+            const timeSlots = document.querySelectorAll(".book_time_options");
+            if (selectedFullDate.getDay() == 1 || selectedFullDate.getDay() == 2 || selectedFullDate.getDay() == 3 || selectedFullDate.getDay() == 4 || selectedFullDate.getDay() == 5) {
+                function disableTimeSlots () {
+                    timeSlots.forEach(element => {
+                        element.classList.add("weekday_dis");
+                    })
+                }
+                disableTimeSlots();
+            } else {
+                function enableTimeSlots () {
+                    timeSlots.forEach(element => {
+                        element.classList.remove("weekday_dis");
+                    })
+                }
+                enableTimeSlots();
+            }
         });
 
         dayButton.classList.add("calendar_day");
@@ -105,7 +131,6 @@ nextMonth.addEventListener("click", function () {
     currentDate.setMonth(currentDate.getMonth() + 1);
 
     renderCalendar();
-    console.log(currentDate);
 })
 
 prevMonth.addEventListener("click", function () {
@@ -114,10 +139,7 @@ prevMonth.addEventListener("click", function () {
     renderCalendar();
 })
 
-const customSelect = document.getElementById("conditionSelect");
 const trigger = customSelect.querySelector(".select_trigger");
-const selectedText = customSelect.querySelector(".selected_text");
-const options = customSelect.querySelectorAll(".select_options li");
 const hiddenInput = document.getElementById("selServ");
 
 trigger.addEventListener("click", () => {
@@ -125,13 +147,13 @@ trigger.addEventListener("click", () => {
 });
 
 options.forEach(option => {
-  option.addEventListener("click", () => {
+    option.addEventListener("click", () => {
     selectedText.textContent = option.textContent;
-    selectedText.classList.add("selected_services");
+    selectedText.classList.add("selected_service");
     hiddenInput.value = option.dataset.value;
-    selectedText.style.color = 'var(--bs-body-color)';
-    selectedText.style.fontWeight = '450';
-    selectedText.style.fontSize = '1rem';
+    //selectedText.style.color = 'var(--bs-body-color)';
+    //selectedText.style.fontWeight = '450';
+    //selectedText.style.fontSize = '1rem';
 
     options.forEach(item => item.classList.remove("selected"));
     option.classList.add("selected");

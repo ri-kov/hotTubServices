@@ -411,7 +411,7 @@
                             <div class = "date_group" style = "display: block; margin-left: 1.2rem;">
                                 <label for = "prefferedDate" class = "input_name" style = "margin-bottom: 0.3rem;">Preffered Date <span class = "star">*</span></label>
                                 <button type="button" class="date_button" id = "dateButton">
-                                        <span id = "selectedDate">Select a service</span>
+                                        <span id = "selectedDate">Select a date</span>
                                         <i class="fa-regular fa-calendar" style = "font-size: 1.4rem; opacity: 0.85;"></i>
                                 </button>
                                 <div class = "calendar" id = "calendar">
@@ -441,25 +441,24 @@
                                 <div class="custom_select" id="conditionSelect" style = "position: relative;">
                                     <button type="button" class="select_trigger" id = "select">
                                         <span class = "selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select time</span>
-                                        <span class = "mod_emoji emoji_down" style = "left: 8.4rem;"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem;"></i></span>
-                                        <span class = "mod_emoji emoji_up" style = "left: 7rem;"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem;"></i></span>
+                                        <span class = "mod_emoji emoji_down" style = "left: 14.4rem; position: absolute;"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem;"></i></span>
+                                        <span class = "mod_emoji emoji_up" style = "left: 14.4rem; position: absolute;"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem;"></i></span>
                                     </button>
                                     <ul class="select_options">
-                                        <li data-hour = "8">8:00 AM</li>
-                                        <li data-hour = "9">9:00 AM</li>
-                                        <li data-hour = "10">10:00 AM</li>
-                                        <li data-hour = "11">11:00 AM</li>
-                                        <li data-hour = "12">12:00 PM</li>
-                                        <li data-hour = "13">1:00 PM</li>
-                                        <li data-hour = "14">2:00 PM</li>
-                                        <li data-hour = "15">3:00 PM</li>
-                                        <li data-hour = "16">4:00 PM</li>
+                                        <li data-hour = "8" class = "book_time_options">8:00 AM</li>
+                                        <li data-hour = "9" class = "book_time_options">9:00 AM</li>
+                                        <li data-hour = "10" class = "book_time_options">10:00 AM</li>
+                                        <li data-hour = "11" class = "book_time_options">11:00 AM</li>
+                                        <li data-hour = "12" class = "book_time_options">12:00 PM</li>
+                                        <li data-hour = "13" class = "book_time_options">1:00 PM</li>
+                                        <li data-hour = "14" class = "book_time_options">2:00 PM</li>
+                                        <li data-hour = "15" class = "book_time_options">3:00 PM</li>
+                                        <li data-hour = "16" class = "book_time_options">4:00 PM</li>
                                         <li data-hour = "17">5:00 PM</li>
                                         <li data-hour = "18">6:00 PM</li>
                                         <li data-hour = "19">7:00 PM</li>
                                         <li data-hour = "20">8:00 PM</li>
                                         <li data-hour = "21">9:00 PM</li>
-                                        <li data-hour = "22">10:00 PM</lu>
                                     </ul>
                                     <input type="hidden" name="mod_sel_serv" id="selServ" required>
                                 </div>

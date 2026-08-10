@@ -872,12 +872,15 @@ h1 {
     font-weight: 500;
     opacity: 0.9;
     line-height: 1.5;
-    color: black;
+    font-weight: 500;
+    color: var(--bs-body-color);
 }
 
 .selected_service {
     opacity: 0.9 !important;
     font-weight: 500 !important;
+    font-size: 1rem !important;
+    color: var(--bs-body-color);
 }
 
 .select_options li {
@@ -948,4 +951,8 @@ h1 {
 .select_options li.selected {
   background: #1F71CE;
   color: #fff;
+}
+
+.weekday_dis {
+    display: none;
 }
