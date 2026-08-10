@@ -176,4 +176,4 @@ const charCount = document.getElementById("charactersCount");
 
 textarea.addEventListener("input", () => {
     charCount.textContent = `${textarea.value.length}/500`;
-})
+});
