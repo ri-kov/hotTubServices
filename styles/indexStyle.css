@@ -1091,3 +1091,27 @@ textarea::placeholder {
     font-size: 0.9rem;
     width: 16rem;
 }
+
+.choose_box {
+    background-color: #f6f6f6;
+    border: 2px solid #51515120;
+    height: 10rem;
+    border-radius: 6px;
+    width: 22rem;
+}
+
+.choose_div {
+    height: 1.9rem;
+    width: 0.1rem;
+    border-left: 0.1rem solid #51515141;
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.choose_head {
+    color: #00004a;
+    margin-bottom: 0.2rem;
+    font-weight: 650;
+    margin-top: 0.2rem;
+}
