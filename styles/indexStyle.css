@@ -1019,3 +1019,9 @@ textarea::placeholder {
     margin-bottom: 0;
     margin-left: 0.3rem;
 }
+
+.disabled_day {
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.5;
+}

@@ -76,10 +76,20 @@ function renderCalendar() {
         calendarDays.appendChild(emptySpace);
     }
 
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
     for (let day = 1; day <= numberOfDays; day++) {
         const dayButton = document.createElement("button");
         dayButton.type = "button";
         dayButton.textContent = day;
+
+        const newCurrentDate = new Date(year, month, day);
+
+        if (newCurrentDate < today) {
+            dayButton.disabled = true;
+            dayButton.classList.add("disabled_day");
+        }
 
         dayButton.addEventListener("click", function() {
             trigger.classList.add("enabled");
