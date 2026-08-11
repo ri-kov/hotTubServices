@@ -1045,3 +1045,35 @@ textarea::placeholder {
     border-left: 0.1rem dashed grey;
     opacity: 0.4;
 }
+
+.steps_box {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding-left: 1.5rem;
+    width: 25rem;
+    margin-top: 2rem;
+    height: 42rem;
+    margin-left: -6rem;
+    padding-top: 1.5rem;
+}
+
+.steps_head {
+    text-transform: uppercase;
+    color: #00004a;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+    justify-self: center;
+    margin-left: -2rem;
+}
+
+.steps_div {
+    background-color: #e10000;
+    width: 2rem;
+    height: 0.2rem;
+    border-bottom: 0.1rem solid #e10000;
+    justify-self: center;
+    border-radius: 20px;
+    margin-bottom: 0.6rem;
+}
