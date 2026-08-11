@@ -1029,21 +1029,20 @@ textarea::placeholder {
 .next_circ {
     background-color: #00004a0f;
     border-radius: 100px;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-right: 2rem;
 }
 
 .next_line {
-    height: 3rem;
+    height: 2.5rem;
     width: 0.1rem;
     border-left: 0.1rem dashed grey;
     opacity: 0.4;
+    margin-left: 2rem;
 }
 
 .steps_box {
@@ -1076,4 +1075,19 @@ textarea::placeholder {
     justify-self: center;
     border-radius: 20px;
     margin-bottom: 0.6rem;
+}
+
+.steps_main {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+    color: #00004a;
+}
+
+.steps_text {
+    color: #00004a;
+    font-weight: 450;
+    opacity: 0.9;
+    font-size: 0.9rem;
+    width: 16rem;
 }
