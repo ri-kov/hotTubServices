@@ -1177,3 +1177,10 @@ textarea::placeholder {
     opacity: 0.9;
     margin-bottom: 0.5rem;
 }
+
+.contact_box_text {
+    color: #00004a;
+    opacity: 0.9;
+    font-size: 0.9rem;
+    font-weight: 450;
+}
