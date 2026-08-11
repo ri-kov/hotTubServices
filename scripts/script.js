@@ -161,18 +161,18 @@ trigger.addEventListener("click", () => {
 
 options.forEach(option => {
     option.addEventListener("click", () => {
-    selectedText.textContent = option.textContent;
-    selectedText.classList.add("selected_service");
-    hiddenInput.value = option.dataset.value;
-    //selectedText.style.color = 'var(--bs-body-color)';
-    //selectedText.style.fontWeight = '450';
-    //selectedText.style.fontSize = '1rem';
+        selectedText.textContent = option.textContent;
+        selectedText.classList.add("selected_service");
+        hiddenInput.value = option.dataset.value;
+        //selectedText.style.color = 'var(--bs-body-color)';
+        //selectedText.style.fontWeight = '450';
+        //selectedText.style.fontSize = '1rem';
 
-    options.forEach(item => item.classList.remove("selected"));
-    option.classList.add("selected");
+        options.forEach(item => item.classList.remove("selected"));
+        option.classList.add("selected");
 
-    customSelect.classList.remove("exp");
-  });
+        customSelect.classList.remove("exp");
+    });
 });
 
 document.addEventListener("click", event => {
