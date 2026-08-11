@@ -1187,7 +1187,7 @@ textarea::placeholder {
 
 .footer {
     position: static;
-    background: #00004a;
+    background: #00002a;
     color: white;
     padding: 110px 8% 40px;
     margin-top: 2rem;
@@ -1211,6 +1211,7 @@ textarea::placeholder {
     color: white;
     margin-top: 3.3rem;
     margin-bottom: 0.4rem;
+    white-space: nowrap;
 }
 
 .footer_sect_div {
@@ -1237,4 +1238,24 @@ textarea::placeholder {
 .foot_links:hover {
     color: #a2a2a2;
     transition: 0.3s ease;
+}
+
+.back_square {
+    width: 2rem;
+    height: 2rem;
+    background-color: #000078;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.footer_div {
+    width: 100vw;
+    height: 0.07rem;
+    border-top: 0.07rem solid #000078;
+    opacity: 0.8;
+    margin-bottom: 2rem;
 }
