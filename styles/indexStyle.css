@@ -1205,20 +1205,20 @@ textarea::placeholder {
 }
 
 .footer_head {
-    font-size: 1.1rem;
-    font-weight: 650;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-transform: uppercase;
     color: white;
     margin-top: 3.3rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
 }
 
 .footer_sect_div {
     background-color: #e10000;
-    width: 2rem;
-    height: 0.2rem;
+    width: 2.5rem;
+    height: 0.13rem;
     border-bottom: 0.06rem solid #e10000;
-    justify-self: center;
+    /* justify-self: center; */
     border-radius: 20px;
     margin-bottom: 1rem;
 }
@@ -1231,4 +1231,10 @@ textarea::placeholder {
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.foot_links:hover {
+    color: #a2a2a2;
+    transition: 0.3s ease;
 }
