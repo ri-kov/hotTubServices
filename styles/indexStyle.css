@@ -1075,6 +1075,7 @@ textarea::placeholder {
     justify-self: center;
     border-radius: 20px;
     margin-bottom: 0.6rem;
+    margin-left: -2rem;
 }
 
 .steps_main {
@@ -1098,6 +1099,7 @@ textarea::placeholder {
     height: 10rem;
     border-radius: 6px;
     width: 22rem;
+    margin-top: 0.5rem;
 }
 
 .choose_div {
@@ -1114,4 +1116,13 @@ textarea::placeholder {
     margin-bottom: 0.2rem;
     font-weight: 650;
     margin-top: 0.2rem;
+}
+
+.choose_text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #00004a;
+    opacity: 0.9;
+    margin-left: 0.5rem;
+    margin-bottom: 0.3rem;
 }
