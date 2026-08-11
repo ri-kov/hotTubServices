@@ -585,6 +585,7 @@ h1 {
     font-weight: 650;
     margin-bottom: 0;
     margin-left: 0.3rem;
+    text-decoration: none;
 }
 
 .booking_note {
