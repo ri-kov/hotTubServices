@@ -1193,6 +1193,7 @@ textarea::placeholder {
     margin-top: 2rem;
     border-top: 1.5rem solid #e10000;
     padding-top: 0 !important;
+    padding-bottom: 0.5rem;
 }
 
 .foot_desc {
@@ -1253,9 +1254,17 @@ textarea::placeholder {
 }
 
 .footer_div {
-    width: 100vw;
+    width: 83rem;
     height: 0.07rem;
     border-top: 0.07rem solid #000078;
-    opacity: 0.8;
-    margin-bottom: 2rem;
+    opacity: 0.6;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer_btm {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 0;
 }
