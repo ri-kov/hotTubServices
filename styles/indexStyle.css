@@ -1184,3 +1184,30 @@ textarea::placeholder {
     font-size: 0.9rem;
     font-weight: 450;
 }
+
+.footer {
+    position: relative;
+    background: #00004a;
+    color: white;
+    padding: 110px 8% 40px;
+    margin-top: 2rem;
+    clip-path: polygon(  0% 34%, 26% 45%, 46% 44%, 75% 26%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00004a;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    z-index: 0;
+}
+
+.footer_wave {
+    background: #e10000;
+    clip-path: polygon( 0% 30%, 32% 41%, 56% 34%, 75% 21%, 100% 0%, 100% 100%, 0% 100%);
+    padding-top: 0.1rem;
+}
