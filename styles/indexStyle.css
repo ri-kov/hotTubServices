@@ -414,13 +414,12 @@ h1 {
     filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
     overflow: hidden;
     margin-left: 1rem;
-    z-index: 5;
 }
 
 .seasonal_badge::before {
     content: "";
     position: absolute;
-    inset: 7px;
+    inset: 4px;
     border: 1.6px dashed rgba(255, 255, 255, 0.85);
     clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 72%, 0 98%);
     pointer-events: none;
@@ -430,7 +429,7 @@ h1 {
 .seasonal_badge_text {
     color: white;
     font-weight: 650;
-    font-size: 1rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     /* margin-left: 1rem; */
     text-align: center;
@@ -507,7 +506,7 @@ h1 {
     /* margin: 0; */
     margin-left: 18rem;
     border-left: 37rem solid #00000022;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .special_offer_text5 {
@@ -553,7 +552,7 @@ h1 {
 }
 
 .special_offer_book {
-    width: 10rem;
+    width: 12.5rem;
     height: 3rem;
     background: linear-gradient(to bottom, red, #e10000);
     display: flex;
@@ -563,10 +562,10 @@ h1 {
     justify-self: right;
     border-radius: 8px;
     position: relative;
-    bottom: 13.5rem;
-    right: 4.5rem;
     color: white;
     border: 2px solid #e10000;
+    left: 0.8rem;
+    margin-top: -0.6rem;
 }
 
 .special_offer_book:hover {
@@ -582,11 +581,12 @@ h1 {
 
 .special_offer_book_text {
     text-transform: uppercase;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 650;
     margin-bottom: 0;
     margin-left: 0.3rem;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .booking_note {
@@ -1269,4 +1269,38 @@ textarea::placeholder {
     font-size: 0.8rem;
     font-weight: 400;
     margin-bottom: 0;
+}
+
+.special_offer_price_circle {
+    border-radius: 100px;
+    background-color: #ffffffbd;
+    color: #00004a;
+    align-items: center;
+    height: 11rem;
+    width: 11rem;
+    border: 1px solid #3ca7ed99;
+    position: relative;
+    margin-top: 0.8rem;
+    top: 3.05rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+.special_offer_price_circle::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border-radius: 50%;
+    border: 3px dashed #3ca7ed4d;
+}
+
+.special_offer_price_texts {
+    font-size: 0.9rem;
+    color: #00004a;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    text-align: center;
+    z-index: 2;
 }
