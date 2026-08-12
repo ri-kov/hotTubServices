@@ -92,4 +92,14 @@
         margin-left: 0rem !important;
     }
     /* hamburger menu end*/
+
+    .header {
+        height: 4rem;
+    }
+
+    #headerLogo {
+        width: 15rem;
+        height: 9.375rem;
+        margin-top: -1.8rem;
+    }
 }

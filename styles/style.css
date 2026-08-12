@@ -77,6 +77,13 @@ html, body {
     margin: 0 1rem 0 1rem;
 }
 
+.phone_head_link {
+    display: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .hamburger {
     display: none;
     background: none;
@@ -86,15 +93,43 @@ html, body {
     z-index: 1000;
 }
 
+.close_menu {
+    display: none;
+    background: none;
+    /*display: flex;
+    justify-self: right;
+    margin-left: 1rem;*/
+    border: none;
+    cursor: pointer;
+}
+
 .hamburger span {
     display: block;
     width: 28px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #00004a;
     border-radius: 100px;
     margin: 5px 0;
 }
 
 .hamburger_logo {
     display: none;
+}
+
+.link_icons {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .nav_links{
+        display: flex !important;
+    }
+    
+    .nav_links .link {
+        margin-top: 0.5rem;
+    }
+
+    .nav_links .phone_num {
+        margin-top: 0.5rem;
+    }
 }
