@@ -94,6 +94,10 @@
         text-align: center;
         margin-left: 0rem !important;
     }
+
+    .phone_link {
+        display: block !important;
+    }
     /* hamburger menu end*/
 
     .header {
@@ -109,7 +113,6 @@
 
     #servLink {
         margin-left: 0 !important;
-        margin-top: -3rem;
     }
 
     .header_div {
@@ -119,5 +122,109 @@
     .header_button {
         margin-left: 0;
         margin-top: 2rem;
+    }
+
+    .hamb_div {
+        display: block !important;
+        height: 0.1rem;
+        width: 16rem;
+        border-bottom: 0.1rem solid #ffffff84;
+        margin-top: -3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero_desc {
+        color: #e10000;
+        font-size: 0.8rem;
+        font-weight: 650;
+        margin-top: 1.5rem;
+        text-shadow: 2px 2px black;
+    }
+
+    .hero_div {
+        width: 3rem;
+    }
+
+    h1 {
+        font-size: 2.7rem !important;
+        width: 16rem;
+    }
+
+    .hero_text {
+        font-size: 0.9rem;
+        font-weight: 400;
+        width: 15rem;
+        margin-top: 0;
+    }
+
+    #heroText {
+        width: 13rme;
+    }
+
+    .phone_d_flex {
+        display: flex !important;
+    }
+
+    .phone_d_block {
+        display: block !important;
+    }
+
+    .hero_section {
+        height: 36rem !important;
+    }
+
+    .hero_box_circ {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .hero_pic {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .hero_box_head {
+        font-size: 0.9rem;
+        margin-bottom: 0rem;
+        margin-left: -1.2rem;
+    }
+
+    .hero_box_txt {
+        font-size: 0.8rem;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .hero_section .container {
+        padding-left: 1rem !important;
+    }
+
+    #heroBox {
+        margin-top: 3rem !important;
+    }
+
+    #heroBox1 {
+        margin-left: -2.8rem;
+    }
+
+    .hero_box_div {
+        rotate: 90deg;
+        margin-left: 8.3rem;
+        margin-top: -7.7rem;
+        height: 16rem;
+        opacity: 0.7;
+    }
+
+    #heroBox2 {
+        margin-left: -3.4rem;
+        margin-top: -6.5rem;
+    }
+
+    #heroHead2 {
+        margin-left: 0.3rem !important;
+    }
+
+    .hero_box_txt2 {
+        margin-left: 0.9rem !important;
     }
 }

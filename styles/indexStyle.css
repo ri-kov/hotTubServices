@@ -82,7 +82,7 @@ h1 {
 .hero_box_txt {
     color: white;
     font-size: 0.8rem;
-    opacity: 0.9rem;
+    opacity: 0.9;
     width: 10rem;
     text-align: center;
 }

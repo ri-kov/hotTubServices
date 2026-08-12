@@ -29,10 +29,15 @@
             </button>
             <div class = "nav_links" id = "mobileMenu">
                 <img src="pictures/logoText.PNG" alt="logo" class = "hamburger_logo">
+                <div class = "hamb_div" style = "display: none;"></div>
+                <a href="#Home" class = "header_links nav_link link phone_link" style = "display: none;">Home</a>
                 <a href="#Services" class = "header_links nav_link link" style = "margin-left: 40rem;" id = "servLink">services</a>
                 <div class = "header_div"></div>
                 <a href="#Pricing" class = "header_links nav_link link">pricing</a>
                 <div class = "header_div"></div>
+                <!--PHONE ONLY-->
+                <a href="#SpecialOffer" class = "header_links nav_link link phone_link" style = "display: none;">Seasonal Special </a>
+                <!--PHONE ONLY END-->
                 <a href="#Contact" class = "header_links nav_link link">contact</a>
                 <a href = "#BookService" class = "header_button">
                     <i class="fa-brands fa-whmcs" style="color: white; margin: 0.75rem 0.6rem 0 0; font-size: 1.4rem;"></i>
@@ -47,22 +52,27 @@
             <div class = "hero_div"></div>
             <h1>Hot tub service<br><span style = "color: #e10000;">&</span> moving.</h1>
             <p class = "hero_text">Expert care and professional moving for your hot tub.</p>
-            <p class = "hero_text" style = "color: rgb(0, 123, 205); margin-top: 0;">We handle the hard work - you relax.</p>
-            <div style = "display: flex; margin-top: 4rem;">
-                <div>
+            <p class = "hero_text" style = "color: rgb(0, 123, 205); margin-top: 0;" id = "heroText">We handle the hard work - you relax.</p>
+            <div style = "display: flex; margin-top: 4rem;" class = "phone_d_block" id = "heroBox">
+                <div class = "phone_d_flex" id = "heroBox1">
                     <div class = "hero_box_circ">
-                        <img src="pictures/wrenchPic.svg" alt="wrench-icon" style = "height: 2.7rem; width: 2.7rem; align-self: center;">
+                        <img src="pictures/wrenchPic.svg" alt="wrench-icon" style = "height: 2.7rem; width: 2.7rem; align-self: center;" class = "hero_pic">
                     </div>
-                    <p class = "hero_box_head">Expert Service</p>
-                    <p class = "hero_box_txt">Repairs & maintenance done right.</p>
+                    <div class = "phone_d_block">
+                        <p class = "hero_box_head">Expert Service</p>
+                        <p class = "hero_box_txt">Repairs & maintenance done right.</p>
+                    </div>         
                 </div>
                 <div class = "hero_box_div"></div>
-                <div>
+                <div class = "phone_d_flex" id = "heroBox2">
                     <div class = "hero_box_circ" style = "margin-left: 3.7rem;">
                         <img src="pictures/movingPic.svg" alt="moving-icon" style = "height: 2.7rem; width: 2.7rem; align-self: center;">
                     </div>
-                    <p class = "hero_box_head">Professional moving</p>
-                    <p class = "hero_box_txt" style = "width: 12rem;">We move spas of any size safely & efficiently.</p>
+                    <div class = "phone_d_block">
+                        <p class = "hero_box_head" id = "heroHead2">Professional moving</p>
+                        <p class = "hero_box_txt hero_box_txt2" style = "width: 12rem;">We move spas of any size safely & efficiently.</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -193,7 +203,7 @@
                 <p class = "service_footer_note_text">We handle the hard work - you relax.</p>
             </div>
         </div>-->
-        <div class = "special_offer_cont">
+        <div class = "special_offer_cont" id = "SpecialOffer">
             <div class = "row">
                 <div class = "col-md-1">
                     <div style = "filter: drop-shadow(2px 6px 6px rgba(0, 0, 0, 0.4)); display: inline-block; position: relative; z-index: 5;">
