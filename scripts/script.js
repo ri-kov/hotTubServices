@@ -187,3 +187,23 @@ const charCount = document.getElementById("charactersCount");
 textarea.addEventListener("input", () => {
     charCount.textContent = `${textarea.value.length}/500`;
 });
+
+const bookButtons = document.querySelectorAll(".book_btn");
+const form = document.getElementById("bookForm");
+const modSelectedText2 = document.querySelector(".mod_selected_text");
+//const modHiddenInput = document.getElementById("modSelServ");
+
+bookButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        const service = button.dataset.service;
+        const option = document.querySelector(`.mod_select_options li[data-value="${service}"]`);
+        modSelectedText2.textContent = option.textContent;
+        modSelectedText2.classList.add("selected_service");
+        modOptions.forEach(item => item.classList.remove("selected"));
+        option.classList.add("selected");
+        modHiddenInput.value = service;
+        form.scrollIntoView({
+            behaviour: "smooth"
+        });
+    });
+});

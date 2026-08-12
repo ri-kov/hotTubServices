@@ -263,7 +263,7 @@
                     <img src="pictures/checkPic.svg" alt="check-icon" style = "width: 1.5rem; height: 1.5rem;">
                     <p class = "pricing_list">Repairs & parts replacement</p>
                 </div>
-                <div class = "pricing_book_btn pricing_book_btn1">book a service</div>
+                <a href="#bookForm" class = "pricing_book_btn pricing_book_btn1">book a service</a>
             </div>
             <div class = "pricing_card">
                 <div class = "pricing_circ">
@@ -296,7 +296,7 @@
                     <img src="pictures/checkPic.svg" alt="check-icon" style = "width: 1.5rem; height: 1.5rem;">
                     <p class = "pricing_list">System check & perfomance test</p>
                 </div>
-                <div class = "pricing_book_btn pricing_book_btn2" style = "color: white; background-color: #e10000;">book maintenance</div>
+                <button data-service = "full-maintenance" class = "pricing_book_btn pricing_book_btn2 book_btn" style = "color: white; background-color: #e10000;">book maintenance</button>
             </div>
             <div class = "pricing_card">
                 <div class = "pricing_circ">
@@ -329,7 +329,7 @@
                     <img src="pictures/checkPic.svg" alt="check-icon" style = "width: 1.5rem; height: 1.5rem;">
                     <p class = "pricing_list">Check water level & chemistry</p>
                 </div>
-                <div class = "pricing_book_btn pricing_book_btn1">book inspection</div>
+                <button data-service = "full-inspection" class = "pricing_book_btn pricing_book_btn1 book_btn">book inspection</button>
             </div>
         </div>
         <div class = "services_footer" style = "width: 79.6rem; height: 5rem;">
@@ -394,13 +394,13 @@
                                     <button type="button" class="mod_select_trigger" id = "modSelect">
                                         <span class = "mod_selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select a service</span>
                                         <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
-                                        <span class = "mod_emoji mod_emoji_up" style = "left: 5.1rem;"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
+                                        <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
                                     </button>
                                     <ul class="mod_select_options">
                                         <li data-value="full-inspection">Full Inspection</li>
                                         <li data-value="winterize">Winterize</li>
                                         <li data-value="spring-opening">Spring Opening</li>
-                                        <li data-value="electrical-repair">Full Maintenance</li>
+                                        <li data-value="full-maintenance">Full Maintenance</li>
                                         <li data-value="leak-repair">Leak repair</li>
                                         <li data-value="pump-repair">Pump Repair</li>
                                         <li data-value="fluid-inspection">Other</li>
@@ -441,8 +441,8 @@
                                 <div class="custom_select" id="conditionSelect" style = "position: relative;">
                                     <button type="button" class="select_trigger" id = "select">
                                         <span class = "selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select time</span>
-                                        <span class = "mod_emoji emoji_down" style = "left: 14.4rem; position: absolute;"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem;"></i></span>
-                                        <span class = "mod_emoji emoji_up" style = "left: 14.4rem; position: absolute;"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem;"></i></span>
+                                        <span class = "mod_emoji emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem;"></i></span>
+                                        <span class = "mod_emoji emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem;"></i></span>
                                     </button>
                                     <ul class="select_options">
                                         <li data-hour = "8" class = "book_time_options">8:00 AM</li>

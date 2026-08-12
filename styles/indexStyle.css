@@ -331,6 +331,7 @@ h1 {
     flex-wrap: balance;
     border-radius: 8px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .pricing_book_btn1:hover {
@@ -746,8 +747,8 @@ h1 {
 }
 
 .mod_emoji {
-  position: relative;
-  left: 6.5rem;
+  position: absolute;
+  left: 14rem;
   pointer-events: none;
   font-size: 1rem;
   opacity: 0.6;
