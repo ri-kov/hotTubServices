@@ -85,7 +85,7 @@
         width: 100%;
         margin-top: 1rem;
         color: white;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        /*border-bottom: 1px solid rgba(255, 255, 255, 0.15);*/
         margin-left: 0rem;
     }
 
@@ -104,13 +104,20 @@
         width: 15rem;
         height: 9.375rem;
         margin-top: -1.8rem;
+        margin-left: -1.5rem;
     }
 
     #servLink {
         margin-left: 0 !important;
+        margin-top: -3rem;
     }
 
     .header_div {
         display: none;
+    }
+
+    .header_button {
+        margin-left: 0;
+        margin-top: 2rem;
     }
 }
