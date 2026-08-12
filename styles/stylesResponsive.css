@@ -27,6 +27,7 @@
 
     .close_menu {
         right: 1rem;
+        top: 0.8rem;
         position: absolute;
         z-index: 1001;
         color: white;
@@ -39,13 +40,15 @@
         display: block;
         right: 1rem;
         position: absolute;
+        margin-top: 0.6rem;
     }
 
     .hamburger_logo {
         display: block;
-        width: 15rem;
-        height: 15rem;
+        width: 20rem;
+        height: 12rem;
         margin-top: -1.5rem;
+        margin-left: -2rem;
     }
 
     .nav_links .link {
@@ -101,5 +104,13 @@
         width: 15rem;
         height: 9.375rem;
         margin-top: -1.8rem;
+    }
+
+    #servLink {
+        margin-left: 0 !important;
+    }
+
+    .header_div {
+        display: none;
     }
 }
