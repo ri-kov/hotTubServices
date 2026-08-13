@@ -422,6 +422,7 @@
         line-height: 2.2rem;
         margin-top: 0.5rem;
         margin-bottom: 0.4rem;
+        margin-left: 8.8rem;
     }
 
     .special_offer_text3 {
@@ -429,16 +430,16 @@
         width: 18rem;
         text-align: center;
         white-space: normal;
-        margin-left: 17.5rem;
+        margin-left: 9.3rem;
         margin-top: 0;
     }
 
     .offer_box {
         background-color: #f3f3f3eb;
         border-radius: 10px;
-        height: 27rem;
-        width: 25rem;
-        margin-left: 13.6rem;
+        height: 30rem;
+        width: 25.2rem;
+        margin-left: 5.7rem;
         margin-top: 1rem;
     }
 
@@ -494,12 +495,30 @@
         height: 0.08rem;
         width: 20rem;
         border: 0.08rem dashed #a5a5a581;
-        margin-top: -13.5rem;
+        margin-top: -16.5rem;
         margin-left: 16rem;
     }
 
-    .footer_special_background {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.65));
-        backdrop-filter: blur(14px);
+    #footerSpecial {
+        margin-top: -16rem !important;
+        position: relative;
+        right: 13.2rem;
+        bottom: 0.5rem;
+    }
+
+    .special_offer_text5 {
+        font-size: 0.7rem !important;
+        margin-left: 0.2rem;
+        display: block !important;
+    }
+
+    .footer_special_icon {
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+        margin-top: 0.1rem;
+    }
+
+    .special_offer_text5 span {
+        display: block;
     }
 }
