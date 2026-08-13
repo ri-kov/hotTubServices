@@ -5,8 +5,7 @@
         top: 0;
         right: 0;
         width: 75%;
-        max-width: 320px;
-        min-height: 100vh;
+        max-width: 85vh;
         padding: 2rem;
         flex-direction: column;
         transition: transform 0.3s ease;
@@ -14,6 +13,7 @@
         display: flex;
         z-index: 999;
         background: #050a12;
+        height: 40rem !important;
     }
 
     .nav_links.active {
@@ -171,6 +171,8 @@
 
     .hero_section {
         height: 36rem !important;
+        position: relative;
+        overflow: hidden;
     }
 
     .hero_box_circ {
@@ -226,5 +228,27 @@
 
     .hero_box_txt2 {
         margin-left: 0.9rem !important;
+    }
+
+    .head_sec {
+        position: relative;
+    }
+
+    .phone_d_none {
+        display: none !important;
+    }
+
+    .services_div {
+        width: 4rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .services_head {
+        font-size: 2.2rem;
+    }
+
+    .services_txt {
+        font-size: 0.85rem;
+        white-space: nowrap;
     }
 }

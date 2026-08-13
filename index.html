@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></link>
 </head>
 <body>
-    <section>
+    <section class = "head_sec">
         <div class = "header">
             <img src="pictures/logoText.PNG" alt="logo" id = "headerLogo">
             <button id = "hamburger" class = "hamburger" type = "button">
@@ -77,58 +77,62 @@
             </div>
         </div>
     </section>
-    <section class = "section_settings" id = "Services">
+    <section class = "section_settings" id = "Services" style = "display: flex; flex-direction: column; align-items: center;">
         <div class = "services_div"></div>
         <p class = "services_head">services</p>
         <p class = "services_txt">Complete hot tub care - from maintenance to moving.</p>
-        <div style = "display: flex;" class = "container">
-            <div class = "services_card" style = "margin-left: 0;">
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/serviceIllustration1.PNG" alt="maintenance-icon" style = "width: 6rem; margin-top: -1.5rem;">
+        <div style = "display: flex;" class = "container phone_d_block">
+            <div style = "display: flex;">
+                <div class = "services_card" style = "margin-left: 0;">
+                   <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/serviceIllustration1.PNG" alt="maintenance-icon" style = "width: 6rem; margin-top: -1.5rem;">
+                        </div>
                     </div>
+                    <p class = "services_card_head">Hot tub maintenance</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">Regular care to keep your hot tub clean, safe & efficient.</p>        
                 </div>
-                <p class = "services_card_head">Hot tub maintenance</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text">Regular care to keep your hot tub clean, safe & efficient.</p>        
-            </div>
-            <div class = "services_card">
-                <div class = "seasonal_special"></div>
-                <div style = "position: absolute; margin-left: -7.5rem;">
-                    <p class = "seasonal_special_text">seasonal</p>
-                    <p class = "seasonal_special_text" style = "margin-top: 0;">special</p>
-                    <img src="pictures/snowflakePic2.svg" alt="snowflake-icon" style = "width: 1.5rem; height: 1.5rem; margin-left: -0.5rem; margin-top: 0.7rem; opacity: 0.7;">
-                </div>
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/winterizingIllustration.PNG" alt="winterizing-and-opening-icon" style = "width: 6rem; margin-top: -1.1rem; margin-left: 0.3rem;">
+                <div class = "services_card">
+                    <div class = "seasonal_special"></div>
+                    <div style = "position: absolute; margin-left: -7.5rem;">
+                        <p class = "seasonal_special_text">seasonal</p>
+                        <p class = "seasonal_special_text" style = "margin-top: 0;">special</p>
+                        <img src="pictures/snowflakePic2.svg" alt="snowflake-icon" style = "width: 1.5rem; height: 1.5rem; margin-left: -0.5rem; margin-top: 0.7rem; opacity: 0.7;">
                     </div>
-                </div>
-                <p class = "services_card_head">Winterizing & opening</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text">Protect your hot tub in winter & get it ready for summer.</p>        
-            </div>
-            <div class = "services_card">
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/pumpIllustration.PNG" alt="pump-icon" style = "width: 6rem; margin-top: -1.25rem;">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/winterizingIllustration.PNG" alt="winterizing-and-opening-icon" style = "width: 6rem; margin-top: -1.1rem; margin-left: 0.3rem;">
+                        </div>
                     </div>
+                    <p class = "services_card_head">Winterizing & opening</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">Protect your hot tub in winter & get it ready for summer.</p>        
                 </div>
-                <p class = "services_card_head">Pump replacement</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text">High-quality pump replacement for better perfomance.</p>        
             </div>
-            <div class = "services_card">
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/jettaIllustration.PNG" alt="jet-icon" style = "width: 6rem; margin-top: -1.1rem;">
+            <div style = "display: flex;">
+                <div class = "services_card">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/pumpIllustration.PNG" alt="pump-icon" style = "width: 6rem; margin-top: -1.25rem;">
+                        </div>
                     </div>
+                    <p class = "services_card_head">Pump replacement</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">High-quality pump replacement for better perfomance.</p>        
                 </div>
-                <p class = "services_card_head">Jet replacement</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text">Replace worn or broken jets for better massage & flow.</p>        
+                <div class = "services_card">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/jettaIllustration.PNG" alt="jet-icon" style = "width: 6rem; margin-top: -1.1rem;">
+                        </div>
+                    </div>
+                    <p class = "services_card_head">Jet replacement</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">Replace worn or broken jets for better massage & flow.</p>        
+                </div>
             </div>
-            <div class = "services_card">
+            <div class = "services_card phone_d_none">
                 <div class = "services_card_circ">
                     <div>
                         <img src="pictures/toolsIllustration.PNG" alt="tools-icon" style = "width: 5.8rem; margin-top: -0.9rem;">
@@ -139,57 +143,73 @@
                 <p class = "services_card_text">Professional installation of parts to ensure proper fit & function.</p>        
             </div>
         </div>
-        <div style = "display: flex;" class = "container">
-            <div class = "services_card" style = "margin-left: 0;">
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/leakIllustration.PNG" alt="leak-icon" style = "width: 6rem; margin-top: -1rem; margin-left: 0.2rem;">
+        <div style = "display: flex;" class = "container phone_d_block">
+            <div style = "display: flex;">
+                <div class = "services_card phone_d_block" style = "display: none;">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/toolsIllustration.PNG" alt="tools-icon" style = "width: 5.8rem; margin-top: -0.9rem;">
+                        </div>
                     </div>
+                    <p class = "services_card_head">Parts installation</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">Professional installation of parts to ensure proper fit & function.</p>        
                 </div>
-                <p class = "services_card_head">Leak diagnosis<br>& repairs</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text">Find leaks fast & fix them right to prevent further damage.</p>        
-            </div>
-            <div class = "services_card">
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/heaterIllustration.PNG" alt="heater-icon" style = "width: 5.2rem; margin-top: -0.5rem;">
+                <div class = "services_card" style = "margin-left: 0;">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/leakIllustration.PNG" alt="leak-icon" style = "width: 6rem; margin-top: -1rem; margin-left: 0.2rem;">
+                        </div>
                     </div>
+                    <p class = "services_card_head">Leak diagnosis<br>& repairs</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">Find leaks fast & fix them right to prevent further damage.</p>        
                 </div>
-                <p class = "services_card_head">Heater & equipment troubleshooting</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text">Diagnose and resolve issues to keep everything running smoothly.</p>        
             </div>
-            <div class = "services_card">
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/partsIllustration.PNG" alt="parts-icon" style = "width: 6rem; margin-top: -1.2rem;">
+            <div style = "display: flex;">
+                <div class = "services_card">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/heaterIllustration.PNG" alt="heater-icon" style = "width: 5.2rem; margin-top: -0.5rem;">
+                        </div>
                     </div>
+                    <p class = "services_card_head">Heater & equipment troubleshooting</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">Diagnose and resolve issues to keep everything running smoothly.</p>        
                 </div>
-                <p class = "services_card_head">Finding the<br>right parts</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text" style = "width: 14rem;">Identifying the correct replacement parts and taking care of sourcing them for you.</p>        
-            </div>
-            <div class = "services_card">
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/waterChangeIllustration.PNG" alt="water-change-icon" style = "width: 6rem; margin-top: -1.1rem;">
+                <div class = "services_card">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/partsIllustration.PNG" alt="parts-icon" style = "width: 6rem; margin-top: -1.2rem;">
+                        </div>
                     </div>
+                    <p class = "services_card_head">Finding the<br>right parts</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text" style = "width: 14rem;">Identifying the correct replacement parts and taking care of sourcing them for you.</p>        
                 </div>
-                <p class = "services_card_head">Water change<br>& deep cleaning</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text">Thorough cleaning & fresh water for a healthier soak.</p>        
             </div>
-            <div class = "services_card">
-                <div class = "services_card_circ">
-                    <div>
-                        <img src="pictures/movingIllustration.PNG" alt="moving-icon" style = "width: 6.9rem; margin-top: -2rem;">
+            <div style = "display: flex;">
+                <div class = "services_card">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/waterChangeIllustration.PNG" alt="water-change-icon" style = "width: 6rem; margin-top: -1.1rem;">
+                        </div>
                     </div>
+                    <p class = "services_card_head">Water change<br>& deep cleaning</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">Thorough cleaning & fresh water for a healthier soak.</p>        
                 </div>
-                <p class = "services_card_head">Hot tub moving<br>& relocation</p>
-                <div class = "services_card_div"></div>
-                <p class = "services_card_text">Safe moving services - from one place to another.</p>        
-            </div>
+                <div class = "services_card">
+                    <div class = "services_card_circ">
+                        <div>
+                            <img src="pictures/movingIllustration.PNG" alt="moving-icon" style = "width: 6.9rem; margin-top: -2rem;">
+                        </div>
+                    </div>
+                    <p class = "services_card_head">Hot tub moving<br>& relocation</p>
+                    <div class = "services_card_div"></div>
+                    <p class = "services_card_text">Safe moving services - from one place to another.</p>        
+                </div>
+            </div>        
         </div>
         <!--<div class = "services_footer">
             <img src="pictures/shieldPic.PNG" alt="shield-icon" class = "service_footer_icon">
