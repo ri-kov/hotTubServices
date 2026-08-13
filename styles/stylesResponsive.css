@@ -353,7 +353,7 @@
 
     .special_offer_cont {
         width: 100%;
-        height: 45rem;
+        height: 50rem;
         background-size: cover !important;
         background-position: center;
         background-repeat: no-repeat !important;
@@ -436,9 +436,9 @@
     .offer_box {
         background-color: #f3f3f3eb;
         border-radius: 10px;
-        height: 25rem;
-        width: 23rem;
-        margin-left: 14.5rem;
+        height: 27rem;
+        width: 25rem;
+        margin-left: 13.6rem;
         margin-top: 1rem;
     }
 
@@ -494,7 +494,12 @@
         height: 0.08rem;
         width: 20rem;
         border: 0.08rem dashed #a5a5a581;
-        margin-top: -11.5rem;
+        margin-top: -13.5rem;
         margin-left: 16rem;
+    }
+
+    .footer_special_background {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.65));
+        backdrop-filter: blur(14px);
     }
 }
