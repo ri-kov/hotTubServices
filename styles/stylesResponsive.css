@@ -258,5 +258,35 @@
         min-width: 12rem;
         width: 12rem;
         height: 10.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services_card_circ {
+        width: 4rem;
+        height: 4rem;
+        margin-top: 0.3rem;
+    }
+
+    .cards_pics {
+        width: 3.8rem !important;
+        margin-top: -1rem !important;
+    }
+
+    .services_card_head {
+        margin-top: 0.2rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .services_card_text {
+        margin-top: 0.3rem;
+        font-size: 0.8rem;
+        width: 10rem;
+    }
+
+    .services_card_div {
+        width: 2.5rem;
     }
 }
