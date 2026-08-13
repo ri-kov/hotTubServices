@@ -350,4 +350,38 @@
     #partsText {
         width: 12rem !important;
     }
+
+    .special_offer_cont {
+        width: 100%;
+        height: 45rem;
+        background-size: cover !important;
+        background-position: center;
+        background-repeat: no-repeat !important;
+        background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../pictures/bannerBackgroundPhone.PNG);
+        border-radius: 0;
+    }
+
+    .left_part_badge {
+        width: 2rem;
+        height: 3rem;
+        background: linear-gradient(to top, red, #940000);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        clip-path: polygon(0% 0%, 100% 0, 100% 88%, 50% 72%, 0 88%);
+        filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.25));
+        overflow: hidden;
+        margin-left: 1rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .phone_badge {
+        width: 12rem;
+        height: 2.1rem;
+        background: linear-gradient(to bottom, red, #e10000);
+        background-color: red;
+        position: relative;
+        z-index: 2;
+    }
 }
