@@ -447,9 +447,10 @@
         border: 1px solid #1672aeb5;
         height: 9rem;
         width: 9rem;
-        left: 1rem;
+        left: 0.5rem;
         top: 0rem;
         right: 0rem;
+        position: relative;
     }
 
     .special_offer_price_circle::before {
@@ -469,5 +470,31 @@
     .spec_offer_price_pr {
         margin-top: -0.6rem !important;
         font-size: 2.4rem !important;
+    }
+
+    .check_mark {
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+    }
+
+    .special_offer_text4 {
+        white-space: nowrap;
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.15rem;
+        opacity: 1;
+        font-weight: 550;
+    }
+
+    .special_offer_book {
+        z-index: 999;
+    }
+
+    .phone_special_div {
+        height: 0.08rem;
+        width: 20rem;
+        border: 0.08rem dashed #a5a5a581;
+        margin-top: -11.5rem;
+        margin-left: 16rem;
     }
 }
