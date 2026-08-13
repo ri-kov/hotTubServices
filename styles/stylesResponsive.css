@@ -441,4 +441,33 @@
         margin-left: 14.5rem;
         margin-top: 1rem;
     }
+
+    .special_offer_price_circle {
+        background-color: #3c6ded30;
+        border: 1px solid #1672aeb5;
+        height: 9rem;
+        width: 9rem;
+        left: 1rem;
+        top: 0rem;
+        right: 0rem;
+    }
+
+    .special_offer_price_circle::before {
+        border: 3px dashed #ffffffe3;
+    }
+
+    .snowflake_pic {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        margin-left: 3.9rem !important;
+    }
+
+    .spec_offer_price_txt {
+        margin-left: 1.3rem !important;
+    }
+
+    .spec_offer_price_pr {
+        margin-top: -0.6rem !important;
+        font-size: 2.4rem !important;
+    }
 }
