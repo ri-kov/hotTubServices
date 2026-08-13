@@ -359,6 +359,9 @@
         background-repeat: no-repeat !important;
         background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../pictures/bannerBackgroundPhone.PNG);
         border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .left_part_badge {
@@ -383,5 +386,19 @@
         background-color: red;
         position: relative;
         z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .phone_badge_text {
+        color: white;
+        font-size: 0.9rem;
+        margin-left: 0.2rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        white-space: nowrap;
+        font-weight: 750;
+        margin-top: 0.4rem;
     }
 }
