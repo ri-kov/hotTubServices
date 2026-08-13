@@ -282,11 +282,72 @@
 
     .services_card_text {
         margin-top: 0.3rem;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         width: 10rem;
     }
 
     .services_card_div {
         width: 2.5rem;
+    }
+
+    .ml_0 {
+        margin-left: 0;
+    }
+
+    #card6 {
+        margin-left: 1rem !important;
+    }
+
+    .seasonal_special {
+        width: 3rem;
+        margin-top: -4rem;
+        margin-left: -8rem;
+        height: 10rem;
+    }
+
+    .seasonal_special_text {
+        font-size: 0.6rem;
+    }
+
+    .seasonal_special_wrap {
+        margin-left: -6.6rem !important;
+    }
+
+    #snowflakePic {
+        width: 1.3rem !important;
+        height: 1.3rem !important;
+        margin-left: -0.2rem !important;
+        margin-top: 0.3rem !important;
+    }
+
+    .card_pic2 {
+        margin-top: -0.8rem !important;
+    }
+
+    #cardPic3 {
+        margin-top: -0.9rem !important;
+    }
+
+    .card_pic5 {
+        width: 3.3rem !important;
+        margin-top: -0.5rem !important;
+    }
+
+    #cardPic10 {
+        width: 4.2rem !important;
+        margin-top: -1.25rem !important;
+    }
+
+    #leakHead {
+        white-space: nowrap;
+        margin-left: -2.2rem;
+    }
+
+    .cardHeight {
+        height: 11.6rem !important;
+    }
+
+    #partsText {
+        width: 12rem !important;
     }
 }
