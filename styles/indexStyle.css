@@ -621,7 +621,7 @@ h1 {
     padding-left: 1.5rem;
     width: 53.5rem;
     margin-top: 2rem;
-    height: 42rem;
+    height: 44rem;
 }
 
 .book_form_head {
@@ -998,7 +998,7 @@ textarea::placeholder {
     border-radius: 6px;
     width: 50.4rem;
     height: 3rem;
-    margin-top: 2rem;
+    margin-top: 0.8rem;
     align-items: center;
 }
 
@@ -1056,7 +1056,7 @@ textarea::placeholder {
     padding-left: 1.5rem;
     width: 25rem;
     margin-top: 2rem;
-    height: 42rem;
+    height: 44rem;
     margin-left: -6rem;
     padding-top: 1.5rem;
 }
@@ -1103,7 +1103,7 @@ textarea::placeholder {
     height: 10rem;
     border-radius: 6px;
     width: 22rem;
-    margin-top: 0.5rem;
+    margin-top: 1.3rem;
 }
 
 .choose_div {
