@@ -579,9 +579,22 @@
 
     .pricing_list {
         font-size: 0.8rem;
+        margin-bottom: 0.2rem;
     }
 
     .list2 {
         width: 8rem;
+    }
+
+    .pricing_book_btn {
+        font-size: 1rem;
+        width: 11rem;
+        height: 2.4rem;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .pricing_box1 {
+        margin-top: 0rem !important;
     }
 }
