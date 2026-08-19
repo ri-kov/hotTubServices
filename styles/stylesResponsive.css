@@ -978,4 +978,60 @@
     .contact_box2 {
         margin-left: 0 !important;
     }
+
+    .footer_logo {
+        width: 11rem !important;
+    }
+
+    .foot_desc {
+        width: 22rem;
+        font-size: 0.8rem;
+    }
+
+    .footer_box1 {
+        margin-left: 0 !important;
+    }
+
+    .footer_head {
+        margin-top: 0;
+        font-size: 1.05rem;
+    }
+
+    .footer_box2 {
+        margin-left: 3.5rem !important;
+    }
+
+    .footer_sect_div {
+        width: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .footer_options {
+        margin-bottom: 0.3rem;
+        font-size: 0.8rem;
+        margin-left: 0.1rem;
+    }
+
+    .footer_box3 {
+        margin-left: 0 !important;
+        margin-top: 1rem;
+    }
+
+    .footer_email {
+        margin-left: 3rem !important;
+    }
+
+    .footer_div {
+        width: 22rem;
+        margin-top: 1rem;
+    }
+
+    .footer_btm {
+        white-space: nowrap;
+        font-size: 0.7rem;
+    }
+
+    .footer_btm_img {
+        margin-left: 5rem !important;
+    }
 }

@@ -1193,12 +1193,15 @@ textarea::placeholder {
     font-weight: 450;
 }
 
+.contact_section {
+    padding-bottom: 2rem;
+}
+
 .footer {
     position: static;
     background: #00002a;
     color: white;
     padding: 110px 8% 40px;
-    margin-top: 2rem;
     border-top: 1.5rem solid #e10000;
     padding-top: 0 !important;
     padding-bottom: 0.5rem;
