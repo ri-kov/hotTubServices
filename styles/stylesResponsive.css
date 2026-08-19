@@ -496,7 +496,7 @@
         width: 20rem;
         border: 0.08rem dashed #a5a5a581;
         margin-top: -16.5rem;
-        margin-left: 16rem;
+        margin-left: 8rem;
     }
 
     #footerSpecial {
@@ -630,7 +630,7 @@
     .services_footer {
         width: 25.5rem !important;
         margin-left: 0 !important;
-        height: 5.5rem !important;
+        height: 10rem !important;
     }
 
     .service_footer_icon {
@@ -671,5 +671,26 @@
         margin-top: 0.3rem;
         font-size: 0.85rem !important;
         width: 16rem;
+    }
+
+    .phone_pricing_footer_div {
+        width: 22.5rem;
+        height: 0.1rem;
+        border-bottom: 0.1rem solid #51515141;
+        display: block !important;
+        opacity: 0.9;
+        border-radius: 20px;
+        margin-left: 1.5rem;
+    }
+
+    .pricing_bottom_foot {
+        display: flex;
+        margin-left: 2.3rem;
+        margin-top: -0.3rem;
+    }
+
+    .pricing_footer_text {
+        font-size: 0.8rem;
+        width: 18rem;
     }
 }
