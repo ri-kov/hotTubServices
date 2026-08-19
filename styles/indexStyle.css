@@ -356,7 +356,7 @@ h1 {
 .pricing_card_box {
     display: flex;
     justify-self: left;
-    margin-left: 4rem;
+    margin-left: 1rem;
 }
 
 .pricing_footer_head {
