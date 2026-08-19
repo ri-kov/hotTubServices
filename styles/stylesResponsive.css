@@ -842,4 +842,88 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .steps_box {
+        margin-left: 0;
+        margin-top: 0;
+        height: 38rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps_head {
+        font-size: 1.05rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .next_circ {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .steps_pic {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        margin-top: -0.2rem !important;
+    }
+
+    .steps_pic1 {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+    }
+
+    .steps_main {
+        font-size: 0.9rem !important;
+    }
+
+    .steps_text {
+        width: 15rem;
+        font-size: 0.8rem;
+    }
+
+    .choose_pic {
+        width: 1.7rem !important;
+        height: 1.7rem !important;
+    }
+
+    .choose_head {
+        font-size: 0.95rem;
+    }
+
+    .choose_div {
+        height: 1.7rem;
+    }
+
+    .check_icon {
+        width: 1.3rem !important;
+        height: 1.3rem !important;
+        margin-left: 1.5rem !important;
+    }
+
+    .choose_text {
+        font-size: 0.85rem;
+    }
+
+    .choose_wrap {
+        margin-top: 0.2rem !important;
+    }
+
+    .choose_box {
+        height: 8.5rem;
+        margin-top: 0.5rem;
+        margin-left: -1rem;
+    }
+
+    .steps_col {
+        margin-left: -1rem;
+    }
+
+    .next_line {
+        height: 2.5rem;
+        width: 0.1rem;
+        background: repeating-linear-gradient(to bottom, grey 0, grey 0.35rem, transparent 0.35rem, transparent 0.6rem);
+        opacity: 0.4;
+        margin-left: 1.8rem;
+    }
 }
