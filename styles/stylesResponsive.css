@@ -751,6 +751,7 @@
 
     .mod_select_trigger {
         width: 11rem !important;
+        height: 2.4rem !important;
     }
 
     .ml_08 {
@@ -772,5 +773,32 @@
 
     .selected_service {
         font-size: 0.9rem !important;
+    }
+
+    .mod_select_options {
+        width: 11rem;
+    }
+
+    .mod_select_options li {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .book_wrap {
+        margin-top: 0.5rem;
+    }
+
+    .date_button {
+        height: 2.4rem;
+        width: 11rem;
+    }
+
+    .has_date {
+        font-size: 0.9rem;
+    }
+
+    .date_button i {
+        left: 0.5rem;
+        position: relative;
     }
 }
