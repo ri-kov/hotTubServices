@@ -526,6 +526,7 @@
         height: 15rem !important;
         justify-content: center;
         align-items: center;
+        width: 25.5rem;
     }
 
     .pricing_circ {
@@ -582,9 +583,6 @@
         margin-bottom: 0.2rem;
     }
 
-    .list2 {
-        width: 8rem;
-    }
 
     .pricing_book_btn {
         font-size: 1rem;
@@ -592,9 +590,24 @@
         height: 2.4rem;
         margin-top: 0.5rem;
         margin-right: 0.5rem;
+        text-align: center;
+        justify-content: center;
+        padding-top: 0.3rem;
     }
 
     .pricing_box1 {
         margin-top: 0rem !important;
+    }
+
+    .pricing_div {
+        display: none !important;
+    }
+
+    .pricing_div_phone {
+        display: block !important;
+        height: 13rem;
+        width: 0.09rem;
+        border-left: 0.09rem solid #4646462a;
+        margin: 0 1rem 0 1rem;
     }
 }
