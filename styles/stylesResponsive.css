@@ -704,4 +704,40 @@
         text-align: center;
         width: 24rem;
     }
+
+    #bookForm {
+        width: 25.3rem;
+    }
+
+    .book_form_circ {
+        flex-shrink: 0;
+        width: 4rem;
+        height: 4rem;
+        margin-left: 0;
+    }
+
+    .book_form_head {
+        font-size: 1.05rem;
+    }
+
+    .book_form_text {
+        font-size: 0.8rem;
+    }
+
+    .book_form_wrap {
+        margin-top: 1.1rem !important;
+    }
+
+    .input_name {
+        font-size: 0.85rem;
+    }
+
+    input::placeholder {
+        font-size: 0.8rem !important;
+    }
+
+    .book_input {
+        width: 11rem;
+        height: 2.4rem;
+    }
 }

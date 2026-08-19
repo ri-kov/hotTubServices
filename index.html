@@ -530,7 +530,7 @@
                             <div class = "book_form_circ">
                                 <img src="pictures/calendarPic.svg" alt="calendar-icon">
                             </div>
-                            <div style = "margin-left: 1rem; margin-top: 2.4rem;">
+                            <div style = "margin-left: 1rem; margin-top: 2.4rem;" class = "book_form_wrap">
                                 <p class = "book_form_head">Service request form</p>
                                 <p class = "book_form_text">Please provide your details and service information.</p>
                             </div>
@@ -548,87 +548,97 @@
                                     <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formAdress" class="form-control book_form_inp" maxlength="50" inputmode="email" placeholder="Enter your email" required>
                                 </div>
                             </div>
-                            <div style = "display: block;  margin-left: 1.2rem;">
+                            <div style = "display: block;  margin-left: 1.2rem;" class = "phone_d_none">
                                 <span class = "input_name">Phone Number  <span class = "star">*</span></span>
                                 <div class="input-container book_input">
                                     <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formNumber" class="form-control book_form_inp" maxlength="18" inputmode="tel" placeholder="(204) XXX-XXXX" type="number">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group" style = "display: flex; margin-top: 1rem;">
-                            <div style = "display: block;">
-                                <span class = "input_name">Service Type <span class = "star">*</span></span>
-                                <div class="mod_custom_select" id="modConditionSelect" style = "position: relative;">
-                                    <button type="button" class="mod_select_trigger" id = "modSelect">
-                                        <span class = "mod_selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select a service</span>
-                                        <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
-                                        <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
-                                    </button>
-                                    <ul class="mod_select_options">
-                                        <li data-value="full-inspection">Full Inspection</li>
-                                        <li data-value="winterize">Winterize</li>
-                                        <li data-value="spring-opening">Spa Opening</li>
-                                        <li data-value="full-maintenance">Full Maintenance</li>
-                                        <li data-value="leak-repair">Leak repair</li>
-                                        <li data-value="pump-repair">Pump Repair</li>
-                                        <li data-value="fluid-inspection">Other</li>
-                                    </ul>
-                                    <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
+                        <div class="form-group phone_d_block" style = "display: flex; margin-top: 1rem;">
+                            <div style = "display: flex;">
+                                <div style = "display: none;  margin-left: 1.2rem;" class = "phone_d_block">
+                                    <span class = "input_name">Phone Number  <span class = "star">*</span></span>
+                                    <div class="input-container book_input">
+                                        <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formNumber" class="form-control book_form_inp" maxlength="18" inputmode="tel" placeholder="(204) XXX-XXXX" type="number">
+                                    </div>
+                                </div>
+                                <div style = "display: block;">
+                                    <span class = "input_name">Service Type <span class = "star">*</span></span>
+                                    <div class="mod_custom_select" id="modConditionSelect" style = "position: relative;">
+                                        <button type="button" class="mod_select_trigger" id = "modSelect">
+                                            <span class = "mod_selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select a service</span>
+                                            <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
+                                            <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem; margin-top: 0.15rem;"></i></span>
+                                        </button>
+                                        <ul class="mod_select_options">
+                                            <li data-value="full-inspection">Full Inspection</li>
+                                            <li data-value="winterize">Winterize</li>
+                                            <li data-value="spring-opening">Spa Opening</li>
+                                            <li data-value="full-maintenance">Full Maintenance</li>
+                                            <li data-value="leak-repair">Leak repair</li>
+                                            <li data-value="pump-repair">Pump Repair</li>
+                                            <li data-value="fluid-inspection">Other</li>
+                                        </ul>
+                                        <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
+                                    </div>
                                 </div>
                             </div>
-                            <div class = "date_group" style = "display: block; margin-left: 1.2rem;">
-                                <label for = "prefferedDate" class = "input_name" style = "margin-bottom: 0.3rem;">Preffered Date <span class = "star">*</span></label>
-                                <button type="button" class="date_button" id = "dateButton">
-                                        <span id = "selectedDate">Select a date</span>
-                                        <i class="fa-regular fa-calendar" style = "font-size: 1.4rem; opacity: 0.85;"></i>
-                                </button>
-                                <div class = "calendar" id = "calendar">
-                                    <div class = "calendar_header">
-                                        <button type = "button" id = "prevMonth" class = "calendar_arrow">
-                                            <i class = "fa-solid fa-chevron-left" style = "align-self: center;"></i>
-                                        </button>
-                                        <h3 id = "monthYear">August 2026</h3>
-                                        <button type = "button" id = "nextMonth" class = "calendar_arrow">
-                                            <i class = "fa-solid fa-chevron-right" style = "align-self: center;"></i>
-                                        </button>
-                                    </div>
-                                    <div class = "weekdays">
-                                        <span>Sun</span>
-                                        <span>Mon</span>
-                                        <span>Tue</span>
-                                        <span>Wed</span>
-                                        <span>Thu</span>
-                                        <span>Fri</span>
-                                        <span>Sat</span>
-                                    </div>
-                                    <div class = "calendar_days" id = "calendarDays"></div>
-                                </div>
-                            </div>
-                            <div style = "display: block;  margin-left: 1.2rem;">
-                                <span class = "input_name">Preferred Time <span class = "star">*</span></span>
-                                <div class="custom_select" id="conditionSelect" style = "position: relative;">
-                                    <button type="button" class="select_trigger" id = "select">
-                                        <span class = "selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select time</span>
-                                        <span class = "mod_emoji emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem;"></i></span>
-                                        <span class = "mod_emoji emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem;"></i></span>
+                            <div style = "display: flex;">
+                                <div class = "date_group" style = "display: block; margin-left: 1.2rem;">
+                                    <label for = "prefferedDate" class = "input_name" style = "margin-bottom: 0.3rem;">Preffered Date <span class = "star">*</span></label>
+                                    <button type="button" class="date_button" id = "dateButton">
+                                            <span id = "selectedDate">Select a date</span>
+                                            <i class="fa-regular fa-calendar" style = "font-size: 1.4rem; opacity: 0.85;"></i>
                                     </button>
-                                    <ul class="select_options">
-                                        <li data-hour = "8" class = "book_time_options">8:00 AM</li>
-                                        <li data-hour = "9" class = "book_time_options">9:00 AM</li>
-                                        <li data-hour = "10" class = "book_time_options">10:00 AM</li>
-                                        <li data-hour = "11" class = "book_time_options">11:00 AM</li>
-                                        <li data-hour = "12" class = "book_time_options">12:00 PM</li>
-                                        <li data-hour = "13" class = "book_time_options">1:00 PM</li>
-                                        <li data-hour = "14" class = "book_time_options">2:00 PM</li>
-                                        <li data-hour = "15" class = "book_time_options">3:00 PM</li>
-                                        <li data-hour = "16" class = "book_time_options">4:00 PM</li>
-                                        <li data-hour = "17">5:00 PM</li>
-                                        <li data-hour = "18">6:00 PM</li>
-                                        <li data-hour = "19">7:00 PM</li>
-                                        <li data-hour = "20">8:00 PM</li>
-                                        <li data-hour = "21">9:00 PM</li>
-                                    </ul>
-                                    <input type="hidden" name="mod_sel_serv" id="selServ" required>
+                                    <div class = "calendar" id = "calendar">
+                                        <div class = "calendar_header">
+                                            <button type = "button" id = "prevMonth" class = "calendar_arrow">
+                                                <i class = "fa-solid fa-chevron-left" style = "align-self: center;"></i>
+                                            </button>
+                                            <h3 id = "monthYear">August 2026</h3>
+                                            <button type = "button" id = "nextMonth" class = "calendar_arrow">
+                                                <i class = "fa-solid fa-chevron-right" style = "align-self: center;"></i>
+                                            </button>
+                                        </div>
+                                        <div class = "weekdays">
+                                            <span>Sun</span>
+                                            <span>Mon</span>
+                                            <span>Tue</span>
+                                            <span>Wed</span>
+                                            <span>Thu</span>
+                                            <span>Fri</span>
+                                            <span>Sat</span>
+                                        </div>
+                                        <div class = "calendar_days" id = "calendarDays"></div>
+                                    </div>
+                                </div>
+                                <div style = "display: block;  margin-left: 1.2rem;">
+                                    <span class = "input_name">Preferred Time <span class = "star">*</span></span>
+                                    <div class="custom_select" id="conditionSelect" style = "position: relative;">
+                                        <button type="button" class="select_trigger" id = "select">
+                                            <span class = "selected_text" style = "font-weight: 500; margin-left: 0.4rem; font-size: 0.9rem; opacity: 0.85;">Select time</span>
+                                            <span class = "mod_emoji emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem;"></i></span>
+                                            <span class = "mod_emoji emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem;"></i></span>
+                                        </button>
+                                        <ul class="select_options">
+                                            <li data-hour = "8" class = "book_time_options">8:00 AM</li>
+                                            <li data-hour = "9" class = "book_time_options">9:00 AM</li>
+                                            <li data-hour = "10" class = "book_time_options">10:00 AM</li>
+                                            <li data-hour = "11" class = "book_time_options">11:00 AM</li>
+                                            <li data-hour = "12" class = "book_time_options">12:00 PM</li>
+                                            <li data-hour = "13" class = "book_time_options">1:00 PM</li>
+                                            <li data-hour = "14" class = "book_time_options">2:00 PM</li>
+                                            <li data-hour = "15" class = "book_time_options">3:00 PM</li>
+                                            <li data-hour = "16" class = "book_time_options">4:00 PM</li>
+                                            <li data-hour = "17">5:00 PM</li>
+                                            <li data-hour = "18">6:00 PM</li>
+                                            <li data-hour = "19">7:00 PM</li>
+                                            <li data-hour = "20">8:00 PM</li>
+                                            <li data-hour = "21">9:00 PM</li>
+                                        </ul>
+                                        <input type="hidden" name="mod_sel_serv" id="selServ" required>
+                                    </div>
                                 </div>
                             </div>
                         </div>
