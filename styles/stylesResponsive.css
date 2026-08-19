@@ -626,4 +626,50 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .services_footer {
+        width: 25.5rem !important;
+        margin-left: 0 !important;
+        height: 5.5rem !important;
+    }
+
+    .service_footer_icon {
+        height: 5rem;
+        width: 3.24rem;
+        margin-left: 0.7rem;
+        margin-top: 1.2rem;
+        position: relative;
+        left: 2rem;
+    }
+
+    .pricing_footer_box {
+        margin-top: 0 !important;
+        margin-left: -1rem;
+    }
+
+    .pricing_footer_head {
+        font-size: 0.8rem;
+    }
+
+    .pricing_footer_div {
+        height: 1.1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .pricing_footer_subhead {
+        font-size: 0.7rem;
+    }
+
+    .pricing_footer_wrap {
+        margin-top: -0.2rem !important;
+        margin-left: -4rem !important;
+    }
+
+    .service_footer_text {
+        margin-left: 3.75rem;
+        margin-top: 0.3rem;
+        font-size: 0.85rem !important;
+        width: 16rem;
+    }
 }
