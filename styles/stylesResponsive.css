@@ -527,6 +527,7 @@
         justify-content: center;
         align-items: center;
         width: 25.5rem;
+        margin-left: 0;
     }
 
     .pricing_circ {
@@ -550,10 +551,12 @@
 
     .pricing_card_price {
         font-size: 1rem;
+        align-self: center;
     }
 
     .pricing_dollar_sign {
         font-size: 1.2rem;
+        bottom: 1rem;
     }
 
     .pricing_price {
@@ -561,7 +564,7 @@
     }
 
     .pricing_text {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         width: 12rem;
         margin-left: 0.8rem;
         margin-top: -0.3rem;
@@ -576,6 +579,7 @@
     .pricing_check {
         width: 1.2rem !important;
         height: 1.2rem !important;
+        flex: 0 0 0;
     }
 
     .pricing_list {
@@ -585,14 +589,16 @@
 
 
     .pricing_book_btn {
-        font-size: 1rem;
-        width: 11rem;
+        white-space: nowrap;
+        font-size: 0.95rem;
+        width: 11.5rem;
         height: 2.4rem;
         margin-top: 0.5rem;
         margin-right: 0.5rem;
         text-align: center;
         justify-content: center;
-        padding-top: 0.3rem;
+        padding-top: 0.35rem;
+        margin-left: -0.8rem;
     }
 
     .pricing_box1 {
@@ -608,6 +614,16 @@
         height: 13rem;
         width: 0.09rem;
         border-left: 0.09rem solid #4646462a;
-        margin: 0 1rem 0 1rem;
+        margin: 0 1.3rem 0 0.4rem;
+    }
+
+    .pricing_card_box {
+        margin-left: 0;
+    }
+    
+    .price_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
