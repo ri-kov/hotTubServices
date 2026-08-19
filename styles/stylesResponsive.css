@@ -707,6 +707,7 @@
 
     #bookForm {
         width: 25.3rem;
+        height: 43rem;
     }
 
     .book_form_circ {
@@ -737,7 +738,7 @@
     }
 
     .book_input {
-        width: 11rem;
+        width: 11rem !important;
         height: 2.4rem;
     }
 
@@ -800,5 +801,45 @@
     .date_button i {
         left: 0.5rem;
         position: relative;
+    }
+
+    .select_trigger {
+        width: 11rem;
+        height: 2.4rem;
+    }
+
+    .select_options {
+        width: 11rem;
+    }
+
+    #formAdditional {
+        width: 22.8rem !important;
+        height: 5rem !important;
+    }
+
+    .select_trigger {
+       margin-top: 0.185rem; 
+    }
+
+    .form_check {
+        margin-top: -0.5rem;
+    }
+
+    .submit_button {
+        width: 22.8rem;
+    }
+
+    .btm_disc {
+        font-size: 0.6rem;
+    }
+
+    .book_form_btm {
+        margin-left: -0.7rem !important;
+    }
+
+    .book_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
