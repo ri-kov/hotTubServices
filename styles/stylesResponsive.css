@@ -571,4 +571,17 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .pricing_check {
+        width: 1.2rem !important;
+        height: 1.2rem !important;
+    }
+
+    .pricing_list {
+        font-size: 0.8rem;
+    }
+
+    .list2 {
+        width: 8rem;
+    }
 }
