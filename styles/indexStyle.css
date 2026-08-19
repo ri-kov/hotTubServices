@@ -251,6 +251,7 @@ h1 {
     align-self: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    justify-self: center;
 }
 
 .pricing_head {
@@ -260,6 +261,7 @@ h1 {
     align-self: center;
     text-transform: uppercase;
     margin-bottom: 0.7rem;
+    justify-self: center;
 }
 
 .pricing_text_div {
@@ -268,6 +270,7 @@ h1 {
     border-bottom: 0.15rem solid #e10000;
     align-self: center;
     border-radius: 20px;
+    justify-self: center;
 }
 
 .pricing_dollar_sign {
@@ -290,6 +293,7 @@ h1 {
     font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 0.1rem;
+    justify-self: center;
 }
 
 .pricing_text {

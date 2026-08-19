@@ -521,4 +521,46 @@
     .special_offer_text5 span {
         display: block;
     }
+
+    .pricing_card {
+        height: 15rem !important;
+    }
+
+    .pricing_circ {
+        height: 4rem;
+        width: 4rem;
+        justify-self: baseline;
+        margin-left: 4.5rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .pricing_card_circ_pic {
+        width: 3.4rem !important;
+        margin-top: -0.5rem !important;
+    }
+
+    .pricing_head  {
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .pricing_card_price {
+        font-size: 1rem;
+    }
+
+    .pricing_dollar_sign {
+        font-size: 1.2rem;
+    }
+
+    .pricing_price {
+        font-size: 2.6rem;
+    }
+
+    .pricing_text {
+        font-size: 0.8rem;
+        width: 12rem;
+        margin-left: 0.8rem;
+        margin-top: -0.3rem;
+    }
 }
