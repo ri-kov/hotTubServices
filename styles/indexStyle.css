@@ -1355,3 +1355,7 @@ textarea::placeholder {
     height: 1rem;
     cursor: pointer;
 }
+
+.mod_og_txt {
+    font-size: 0.9rem;
+}

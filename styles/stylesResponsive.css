@@ -291,7 +291,7 @@
     }
 
     .ml_0 {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     #card6 {
@@ -739,5 +739,38 @@
     .book_input {
         width: 11rem;
         height: 2.4rem;
+    }
+
+    .form_group1 {
+        margin-top: -0.3rem;
+    }
+
+    .form_group2 {
+        margin-top: 0.5rem !important;
+    }
+
+    .mod_select_trigger {
+        width: 11rem !important;
+    }
+
+    .ml_08 {
+        margin-left: 0.8rem !important;
+    }
+
+    .mod_emoji {
+        font-size: 0.8rem;
+        left: 9rem;
+    }
+
+    .mod_og_txt {
+        font-size: 0.8rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem !important;
+    }
+
+    .selected_service {
+        font-size: 0.9rem !important;
     }
 }

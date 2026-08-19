@@ -13,9 +13,6 @@ modOptions.forEach(option => {
     modSelectedText.textContent = option.textContent;
     modSelectedText.classList.add("selected_service");
     modHiddenInput.value = option.dataset.value;
-    modSelectedText.style.color = 'var(--bs-body-color)';
-    modSelectedText.style.fontWeight = '450';
-    modSelectedText.style.fontSize = '1rem';
 
     modOptions.forEach(item => item.classList.remove("selected"));
     option.classList.add("selected");
