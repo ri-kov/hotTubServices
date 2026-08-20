@@ -1184,6 +1184,7 @@ textarea::placeholder {
     font-weight: 700;
     opacity: 0.9;
     margin-bottom: 0.5rem;
+    text-decoration: none;
 }
 
 .contact_box_text {
