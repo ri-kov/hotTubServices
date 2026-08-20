@@ -232,3 +232,41 @@ document.querySelectorAll(".nav_links a").forEach((link) => {
         closeMenu.style.display = "none";
     });
 });
+
+//form
+const bookForm = document.getElementById('bookForm');
+const submitBtn = form.querySelector('button[type="submit"]');
+
+bookForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(bookForm);
+    formData.append("access_key", "0fe7d2f0-4ac8-497c-9ac3-151aee2f62a3");
+
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("Success! Your message has been sent.");
+            bookForm.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});

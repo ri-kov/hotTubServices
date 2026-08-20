@@ -539,19 +539,19 @@
                             <div style = "display: block;">
                                 <span class = "input_name">Full Name <span class = "star">*</span></span>
                                 <div class="input-container book_input">
-                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formName" class="form-control book_form_inp" maxlength="40" placeholder="Enter your full name" required>
+                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formName" class="form-control book_form_inp" maxlength="40" placeholder="Enter your full name" name = "Name" required>
                                 </div>
                             </div>
                             <div style = "display: block; margin-left: 1.2rem;" class = "ml_08">
                                 <span class = "input_name">Email Address <span class = "star">*</span></span>
                                 <div class="input-container book_input">
-                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formAdress" class="form-control book_form_inp" maxlength="50" inputmode="email" placeholder="Enter your email" required>
+                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formAdress" class="form-control book_form_inp" maxlength="50" inputmode="email" placeholder="Enter your email" name = "Email" required>
                                 </div>
                             </div>
                             <div style = "display: block;  margin-left: 1.2rem;" class = "phone_d_none">
                                 <span class = "input_name">Phone Number  <span class = "star">*</span></span>
                                 <div class="input-container book_input">
-                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formNumber" class="form-control book_form_inp" maxlength="18" inputmode="tel" placeholder="(204) XXX-XXXX" type="number">
+                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formNumber" class="form-control book_form_inp" maxlength="18" inputmode="tel" placeholder="(204) XXX-XXXX" type="number" name = "Phone" required>
                                 </div>
                             </div>
                         </div>
@@ -560,7 +560,7 @@
                                 <div style = "display: none;  margin-left: 1.2rem;" class = "phone_d_block ml_0">
                                     <span class = "input_name">Phone Number  <span class = "star">*</span></span>
                                     <div class="input-container book_input">
-                                        <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formNumber" class="form-control book_form_inp" maxlength="18" inputmode="tel" placeholder="(204) XXX-XXXX" type="number">
+                                        <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "formNumber" class="form-control book_form_inp" maxlength="18" inputmode="tel" placeholder="(204) XXX-XXXX" type="number" name = "PhoneNumber">
                                     </div>
                                 </div>
                                 <div style = "display: block;" class = "ml_08">
@@ -580,7 +580,7 @@
                                             <li data-value="pump-repair">Pump Repair</li>
                                             <li data-value="fluid-inspection">Other</li>
                                         </ul>
-                                        <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
+                                        <input type="hidden" id="modSelServ" name = "Service" required>
                                     </div>
                                 </div>
                             </div>
@@ -610,6 +610,7 @@
                                             <span>Fri</span>
                                             <span>Sat</span>
                                         </div>
+                                        <input type="hidden" id="modSelServ" name = "Date" required>
                                         <div class = "calendar_days" id = "calendarDays"></div>
                                     </div>
                                 </div>
@@ -637,7 +638,7 @@
                                             <li data-hour = "20">8:00 PM</li>
                                             <li data-hour = "21">9:00 PM</li>
                                         </ul>
-                                        <input type="hidden" name="mod_sel_serv" id="selServ" required>
+                                        <input type="hidden" name="Time" id="selServ" required>
                                     </div>
                                 </div>
                             </div>
@@ -646,25 +647,25 @@
                             <div style = "display: block;">
                                 <span class = "input_name">Hot Tub Brand <span class = "star">*</span></span>
                                 <div class="input-container book_input" style = "width: 24.5rem;">
-                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "hotTubBrand" class="form-control book_form_inp" maxlength="40" placeholder="e.g. Jacuzzi, Arctic Spas, Hot Spring" required>
+                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "hotTubBrand" class="form-control book_form_inp" maxlength="40" placeholder="e.g. Jacuzzi, Arctic Spas, Hot Spring" name = "Brand" required>
                                 </div>
                             </div>
                             <div style = "display: block; margin-left: 1.2rem;" class = "ml_08">
                                 <span class = "input_name">Hot Tub Model (if known)</span>
                                 <div class="input-container book_input" style = "width: 24.6rem;">
-                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "hotTubModel" class="form-control book_form_inp" maxlength="50" placeholder="Model Name or series">
+                                    <input style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500;" id = "hotTubModel" class="form-control book_form_inp" maxlength="50" placeholder="Model Name or series" name = "Model">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group" style = "margin-top: 1rem;">
                             <span class = "input_name">Message / Additional Details <span class = "star">*</span></span>
                             <div class = "input-container book_input" style = "width: 50.4rem; height: 8rem;">
-                                <textarea style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500; resize: none;" id = "formAdditional" class="form-control book_form_inp" maxlength="500" placeholder="Please describe your request, any issues you're experiencing or additional details..."></textarea>
+                                <textarea style = "height: 100%; margin-top: 0.3rem; opacity: 0.9; font-weight: 500; resize: none;" id = "formAdditional" class="form-control book_form_inp" maxlength="500" placeholder="Please describe your request, any issues you're experiencing or additional details..." name = "Additional"></textarea>
                                 <p id = "charactersCount">0/500</p>
                             </div>
                         </div>
                         <div class = "form_check">
-                            <input type="checkbox" id = "termsCheckBox" required>
+                            <input type="checkbox" id = "termsCheckBox" name = "Check" required>
                             <label class = "form_check_label" for="termsCheckBox">I agree to the 
                                 <button type = "button" class = "terms_link" data-bs-toggle = "modal" data-bs-target = "#termsModal">Terms & Conditions</button>
                                 <span class = "star">*</span>
