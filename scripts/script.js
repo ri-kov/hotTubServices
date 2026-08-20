@@ -274,14 +274,16 @@ bookForm.addEventListener('submit', async (e) => {
             previouslySelected.classList.remove("selected");
             selectedDate.textContent = "Select a date";
             selectedDate.classList.remove("has_date");
-            console.log(modSelectedText2.textContent);
-            modSelectedText2.textContent = "Select time";
-            console.log(modSelectedText2.textContent);
-            modSelectedText2.classList.remove("selected_service");
-            console.log(modSelectedText2.value);
-            console.log("I'm here");
+            selectedText.textContent = "Select time";
+            selectedText.classList.remove("selected_service");
             modOptions.forEach(item => item.classList.remove("selected"));
-            console.log("I'm at the end");
+            //bookButtons.forEach(function(button) {
+            //    modOptions.forEach(item => item.classList.remove("selected"));
+            //});
+            options.forEach(option => {
+                options.forEach(item => item.classList.remove("selected"));
+                customSelect.classList.remove("exp");
+            });
         } else {
             alert("Error: " + data.message);
         }
