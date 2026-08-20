@@ -51,6 +51,7 @@ const options = customSelect.querySelectorAll(".select_options li");
 const trigger = customSelect.querySelector(".select_trigger");
 const hiddenInput = document.getElementById("selServ");
 let currentDate = new Date();
+const inputDate = document.getElementById("inputDate");
 
 function renderCalendar() {
     calendarDays.innerHTML = "";
@@ -110,6 +111,8 @@ function renderCalendar() {
                 year: "numeric"
             });
             selectedDate.classList.add("has_date");
+            inputDate.value = selectedDate.textContent;
+
 
             const timeSlots = document.querySelectorAll(".book_time_options");
             if (selectedFullDate.getDay() == 1 || selectedFullDate.getDay() == 2 || selectedFullDate.getDay() == 3 || selectedFullDate.getDay() == 4 || selectedFullDate.getDay() == 5) {
@@ -160,7 +163,7 @@ options.forEach(option => {
     option.addEventListener("click", () => {
         selectedText.textContent = option.textContent;
         selectedText.classList.add("selected_service");
-        hiddenInput.value = option.dataset.value;
+        hiddenInput.value = selectedText.textContent;
         //selectedText.style.color = 'var(--bs-body-color)';
         //selectedText.style.fontWeight = '450';
         //selectedText.style.fontSize = '1rem';
@@ -235,7 +238,9 @@ document.querySelectorAll(".nav_links a").forEach((link) => {
 
 //form
 const bookForm = document.getElementById('bookForm');
+console.log("FORM: ", bookForm)
 const submitBtn = form.querySelector('button[type="submit"]');
+const submitBtnText = document.getElementById("submitButtonText");
 
 bookForm.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -243,9 +248,9 @@ bookForm.addEventListener('submit', async (e) => {
     const formData = new FormData(bookForm);
     formData.append("access_key", "0fe7d2f0-4ac8-497c-9ac3-151aee2f62a3");
 
-    const originalText = submitBtn.textContent;
+    const originalText = submitBtnText.textContent;
 
-    submitBtn.textContent = "Sending...";
+    submitBtnText.textContent = "Sending...";
     submitBtn.disabled = true;
 
     try {
@@ -259,6 +264,24 @@ bookForm.addEventListener('submit', async (e) => {
         if (response.ok) {
             alert("Success! Your message has been sent.");
             bookForm.reset();
+            modSelectedText.textContent = "Select a service";
+            modSelectedText.classList.remove("selected_service");
+            modOptions.forEach(option => {
+                modOptions.forEach(item => item.classList.remove("selected"));
+                modCustomSelect.classList.remove("exp");
+            });
+            const previouslySelected = document.querySelector(".calendar_day.selected");
+            previouslySelected.classList.remove("selected");
+            selectedDate.textContent = "Select a date";
+            selectedDate.classList.remove("has_date");
+            console.log(modSelectedText2.textContent);
+            modSelectedText2.textContent = "Select time";
+            console.log(modSelectedText2.textContent);
+            modSelectedText2.classList.remove("selected_service");
+            console.log(modSelectedText2.value);
+            console.log("I'm here");
+            modOptions.forEach(item => item.classList.remove("selected"));
+            console.log("I'm at the end");
         } else {
             alert("Error: " + data.message);
         }
@@ -266,7 +289,7 @@ bookForm.addEventListener('submit', async (e) => {
     } catch (error) {
         alert("Something went wrong. Please try again.");
     } finally {
-        submitBtn.textContent = originalText;
+        submitBtnText.textContent = originalText;
         submitBtn.disabled = false;
     }
 });
