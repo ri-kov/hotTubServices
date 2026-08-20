@@ -945,7 +945,7 @@
     }
 
     .contact_box {
-        width: 20rem;
+        width: 21rem;
         height: 13rem;
     }
 
@@ -971,7 +971,7 @@
     }
 
     .contact_number {
-        font-size: 1.3rem;
+        font-size: 1.15rem;
         margin-bottom: 0.1rem;
     }
 
@@ -1018,7 +1018,7 @@
     }
 
     .footer_email {
-        margin-left: 3rem !important;
+        margin-left: 0.3rem !important;
     }
 
     .footer_div {

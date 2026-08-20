@@ -1149,7 +1149,7 @@ textarea::placeholder {
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    width: 23rem;
+    width: 24rem;
     margin-top: 1.5rem;
     height: 16rem;
     padding-top: 1rem;
@@ -1180,7 +1180,7 @@ textarea::placeholder {
 
 .contact_number {
     color: #e10000;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     opacity: 0.9;
     margin-bottom: 0.5rem;

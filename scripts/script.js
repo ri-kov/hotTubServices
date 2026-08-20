@@ -236,6 +236,19 @@ document.querySelectorAll(".nav_links a").forEach((link) => {
     });
 });
 
+function updateMobileFields() {
+    const isMobile = window.innerWidth <= 768;
+    const desktopPhone = document.getElementById("formNumber");
+    const mobilePhone = document.getElementById("formPhoneNumber");
+
+    desktopPhone.required = !isMobile;
+    mobilePhone.required = isMobile;
+}
+
+updateMobileFields();
+window.addEventListener("resize", updateMobileFields);
+
+
 //form
 const bookForm = document.getElementById('bookForm');
 console.log("FORM: ", bookForm)
@@ -262,6 +275,7 @@ bookForm.addEventListener('submit', async (e) => {
         const data = await response.json();
 
         if (response.ok) {
+            console.log("Submission fired");
             alert("Success! Your message has been sent.");
             bookForm.reset();
             modSelectedText.textContent = "Select a service";
@@ -285,6 +299,7 @@ bookForm.addEventListener('submit', async (e) => {
                 customSelect.classList.remove("exp");
             });
         } else {
+            console.log("Something wrong");
             alert("Error: " + data.message);
         }
 
