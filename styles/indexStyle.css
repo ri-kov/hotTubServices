@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     background: linear-gradient(to right, rgb(0, 0, 13,1), rgba(0, 0, 13, 0.7), rgba(0, 0, 13, 0.2), rgba(0, 0, 13, 0), rgba(0, 0, 13, 0)), 
-                url(../pictures/heroBackground.png);
+                url(../pictures/heroBackground.PNG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
