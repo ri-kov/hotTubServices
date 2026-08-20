@@ -397,7 +397,7 @@ h1 {
 }
 
 .special_offer_cont {
-    background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../pictures/bannerBackground.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../pictures/bannerBackground.PNG);
     width: 81.3rem;
     border-radius: 8px;
     height: 16rem;
