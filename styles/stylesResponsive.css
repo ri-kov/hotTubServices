@@ -1034,4 +1034,8 @@
     .footer_btm_img {
         margin-left: 5rem !important;
     }
+
+    #selectedDate {
+        white-space: nowrap;
+    }
 }
