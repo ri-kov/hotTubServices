@@ -433,8 +433,8 @@
         background-color: #f3f3f3eb;
         border-radius: 10px;
         height: 30rem;
-        width: 25.2rem;
-        margin-left: 5.7rem;
+        width: 92vw;
+        justify-self: center;
         margin-top: 1rem;
     }
 
@@ -484,6 +484,8 @@
 
     .special_offer_book {
         z-index: 999;
+        left: 0 !important;
+        margin-right: 0.5rem;
     }
 
     .phone_special_div {
