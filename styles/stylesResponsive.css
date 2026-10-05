@@ -849,7 +849,9 @@
     }
 
     .submit_button {
-        width: 22.8rem;
+        width: auto;
+        padding-right: 4rem;
+        padding-left: 4rem;
     }
 
     .btm_disc {
