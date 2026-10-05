@@ -249,15 +249,14 @@
 
     .services_txt {
         font-size: 0.85rem;
-        white-space: nowrap;
     }
 
     .services_card {
         margin-top: 0.7rem;
         margin-left: 1rem;
-        min-width: 12rem;
-        width: 12rem;
-        height: 10.5rem;
+        min-width: auto;
+        height: auto;
+        padding: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -283,7 +282,7 @@
     .services_card_text {
         margin-top: 0.3rem;
         font-size: 0.75rem;
-        width: 10rem;
+        width: auto !important;
     }
 
     .services_card_div {
@@ -306,7 +305,10 @@
     }
 
     .seasonal_special_text {
+        left: 0.6rem;
+        position: relative;
         font-size: 0.6rem;
+        margin-top: 0;
     }
 
     .seasonal_special_wrap {
@@ -317,6 +319,8 @@
         width: 1.3rem !important;
         height: 1.3rem !important;
         margin-left: -0.2rem !important;
+        position: relative;
+        left: 0.7rem;
         margin-top: 0.3rem !important;
     }
 
@@ -339,17 +343,8 @@
     }
 
     #leakHead {
-        white-space: nowrap;
-        margin-left: -2.2rem;
-    }
-
-    .cardHeight {
-        height: 11.6rem !important;
-    }
-
-    #partsText {
-        width: 12rem !important;
-    }
+        width: auto !important;
+    }               
 
     .special_offer_cont {
         width: 100%;
