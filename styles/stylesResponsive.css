@@ -694,13 +694,19 @@
     }
 
     .phone_pricing_footer_div {
-        width: 22.5rem;
+        width: 93%;
         height: 0.1rem;
         border-bottom: 0.1rem solid #51515141;
         display: block !important;
         opacity: 0.9;
         border-radius: 20px;
-        margin-left: 1.5rem;
+        margin-left: 0;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .js_cent {
+        justify-content: center !important;
     }
 
     .pricing_bottom_foot {
@@ -727,7 +733,8 @@
 
     #bookForm {
         width: auto;
-        height: autp;
+        height: auto;
+        padding: 0.5rem;
     }
 
     .book_form_wrapper {
@@ -767,7 +774,7 @@
     }
 
     .book_input {
-        width: 41vw !important;
+        width: 44vw !important;
         height: 2.4rem;
     }
 
@@ -780,7 +787,7 @@
     }
 
     .mod_select_trigger {
-        width: 41vw !important;
+        width: 44vw !important;
         height: 2.4rem !important;
     }
 
@@ -827,7 +834,7 @@
 
     .date_button {
         height: 2.4rem;
-        width: 41vw;
+        width: 44vw;
     }
 
     .has_date {
@@ -840,16 +847,16 @@
     }
 
     .select_trigger {
-        width: 41vw;
+        width: 44vw;
         height: 2.4rem;
     }
 
     .select_options {
-        width: 41vw;
+        width: 44vw;
     }
 
     #formAdditional {
-        width: 82.2vw !important;
+        width: 88.2vw !important;
         height: 5rem !important;
     }
 
