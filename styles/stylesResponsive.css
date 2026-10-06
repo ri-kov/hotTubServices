@@ -537,7 +537,8 @@
         align-items: center;
         width: auto;
         margin-left: 0;
-        padding-right: 0.2rem;
+        padding: 0.5rem;
+        padding-top: 0;
     }
 
     .pricing_circ {
@@ -580,9 +581,9 @@
 
     .pricing_text {
         font-size: 0.75rem;
-        width: 12rem;
-        margin-left: 0.8rem;
+        width: auto !important;
         margin-top: -0.3rem;
+        margin-bottom: 0rem;
     }
 
     .pricing_section {
@@ -606,15 +607,15 @@
 
 
     .pricing_book_btn {
-        font-size: 0.95rem;
-        padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+        font-size: 1.05rem;
+        padding: 0.5rem 0.7rem 0.5rem 0.7rem;
         width: auto;
         height: auto;
         margin-top: 0.5rem;
         margin-right: 0.5rem;
         text-align: center;
         justify-content: center;
-        margin-left: -0.8rem;
+        justify-self: center;
         margin-bottom: 0.5rem;
     }
 
@@ -623,7 +624,7 @@
     }
 
     .pricing_div {
-        display: none !important;
+        width: 93%;
     }
 
     .pricing_div_phone {
@@ -636,6 +637,7 @@
 
     .pricing_card_box {
         margin-left: 0;
+        display: flex;
     }
     
     .price_box {
@@ -1107,4 +1109,10 @@
         align-self: center;
         margin-top: 1rem;
     }
+
+    .phone_d_flex_col {
+        display: flex !important;
+        flex-direction: column;
+    }
+    
 }
