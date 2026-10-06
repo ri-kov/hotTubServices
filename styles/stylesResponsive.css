@@ -797,13 +797,16 @@
 
     .mod_emoji {
         font-size: 0.8rem;
-        position: relative !important;
-        left: 0 !important;
+        position: absolute;
+        right: 0.5rem;
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
-    .mod_emoji .fa-solid.fa-chevron-down {
+    .mod_select_trigger {
         position: relative;
-        left: 1rem;
+        padding-right: 1rem;
     }
 
     .mod_og_txt {
@@ -820,7 +823,7 @@
     }
 
     .mod_select_options {
-        width: 11rem;
+        width: 44vw;
     }
 
     .mod_select_options li {
@@ -876,10 +879,6 @@
 
     .btm_disc {
         font-size: 0.6rem;
-    }
-
-    .book_form_btm {
-        margin-left: -0.7rem !important;
     }
 
     .book_section {
@@ -1086,11 +1085,6 @@
 
     .emj2 {
         left: 2rem !important;
-    }
-
-    .emj3 {
-        left: 0.6rem !important;
-        position: relative;
     }
 
     .special_offer_div_phone {
