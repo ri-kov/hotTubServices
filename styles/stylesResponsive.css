@@ -355,7 +355,7 @@
         background-repeat: no-repeat !important;
         background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../pictures/bannerBackgroundPhone.PNG);
         border-radius: 0;
-        display: flex;
+        display: none !important;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -410,6 +410,7 @@
     #wintSloganBox {
         margin-left: 0 !important;
         margin-top: 0.5rem !important;
+        justify-self: center;
     }
 
     .special_offer_text2 {
@@ -419,7 +420,9 @@
         line-height: 2.2rem;
         margin-top: 0.5rem;
         margin-bottom: 0.4rem;
-        margin-left: 8.8rem;
+        margin-left: 0rem !important;
+        justify-self: center;
+        align-self: center;
     }
 
     .special_offer_text3 {
@@ -427,8 +430,9 @@
         width: 18rem;
         text-align: center;
         white-space: normal;
-        margin-left: 9.3rem;
+        margin-left: 0 !important;
         margin-top: 0;
+        align-self: center;
     }
 
     .offer_box {
@@ -449,6 +453,7 @@
         top: 0rem;
         right: 0rem;
         position: relative;
+        flex-shrink: 0;
     }
 
     .special_offer_price_circle::before {
@@ -476,9 +481,9 @@
     }
 
     .special_offer_text4 {
-        white-space: nowrap;
+        width: auto !important;
         font-size: 0.75rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.2rem;
         margin-top: 0.15rem;
         opacity: 1;
         font-weight: 550;
@@ -488,26 +493,32 @@
         z-index: 999;
         left: 0 !important;
         margin-right: 0.5rem;
+        justify-self: left;
+        margin-left: 0.5rem;
+        width: auto !important;
+        height: auto !important;
+        padding: 0.5rem;
     }
 
     .phone_special_div {
         height: 0.08rem;
-        width: 20rem;
         border: 0.08rem dashed #a5a5a581;
-        margin-top: -16.5rem;
-        margin-left: 8rem;
+        margin: 1rem;
+        width: 92%;
+        justify-self: center;
     }
 
     #footerSpecial {
-        margin-top: -16rem !important;
-        margin-left: 0 !important;
-        justify-self: center;
+        margin-left: 0.5rem !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
     }
 
     .special_offer_text5 {
         font-size: 0.7rem !important;
         margin-left: 0.2rem;
         display: block !important;
+        white-space: normal !important;
     }
 
     .footer_special_icon {
@@ -595,7 +606,8 @@
 
 
     .pricing_book_btn {
-        font-size: 1.05rem;
+        font-size: 0.95rem;
+        padding: 0.2rem 0.3rem 0.2rem 0.3rem;
         width: auto;
         height: auto;
         margin-top: 0.5rem;
@@ -1070,5 +1082,29 @@
     .emj3 {
         left: 0.6rem !important;
         position: relative;
+    }
+
+    .special_offer_div_phone {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-size: cover !important;
+        background-position: center;
+        background-repeat: no-repeat !important;
+        background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url(../pictures/bannerBackgroundPhone.PNG);
+        justify-content: center;
+        align-content: center;
+        padding: 1rem 0.5rem;
+        margin-top: 2rem;
+    }
+
+    .special_offer_container_content {
+        background-color: #f3f3f3eb;
+        border-radius: 10px;
+        height: auto;
+        width: 92vw;
+        align-self: center;
+        margin-top: 1rem;
     }
 }
