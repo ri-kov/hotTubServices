@@ -500,9 +500,8 @@
 
     #footerSpecial {
         margin-top: -16rem !important;
-        position: relative;
-        right: 13.2rem;
-        bottom: 0.5rem;
+        margin-left: 0 !important;
+        justify-self: center;
     }
 
     .special_offer_text5 {
